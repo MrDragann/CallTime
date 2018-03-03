@@ -1,4 +1,4 @@
-﻿
+﻿@import url('../../fonts/fonts.css');
 
 
 .top-header {
@@ -12,6 +12,7 @@
 
 .bottom-header {
     height: 78px;
+    background-color: #FFF;
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 }
 
@@ -30,10 +31,12 @@
     justify-content: center;
     height: 100%;
 }
-.flex-nav-header .flex-item {
-    display:flex;
-    align-items:center;
-}
+
+    .flex-nav-header .flex-item {
+        display: flex;
+        align-items: center;
+    }
+
     .flex-nav-header div, .flex-top-header div {
         margin: 0 20px;
     }
@@ -46,9 +49,9 @@
             font-family: Roboto-Bold;
         }
 
-            .flex-nav-header .flex-item.active {
-               border-bottom:2px solid orange;
-            }
+    .flex-nav-header .flex-item.active {
+        border-bottom: 2px solid orange;
+    }
 
 .flex-top-header a {
     font-family: Roboto-Regular;
@@ -73,3 +76,129 @@
     flex-direction: row;
     height: 100%;
 }
+.flex-column {
+    display: flex;
+    height: 100%;
+   flex-direction:column;
+   justify-content:space-around;
+}
+.flex-column .title-header, .flex-column .desicription-header  {
+    width:50%;
+}
+.title-header {
+    font-size: 50px;
+    font-family: ROBOTOSLAB-BOLD;
+}
+    .title-header p {
+        font-size: 50px;
+        font-family: ROBOTOSLAB-BOLD;
+        color: #BEBEBE!important;
+    }
+        .title-header p span {
+            color: #FF8035 !important;
+        }
+
+.desicription-header {
+    font-size: 18px;
+    font-family: Roboto-Regular;
+    color: #383838;
+}
+.box-icon {
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    background-color: #F7F7F7;
+    box-shadow: 0px 3px 9px 2px #E9E9E9;
+    padding: 15px;
+    margin: 0 15px;
+}
+    .box-icon span {
+        color: #BEBEBE;
+    }
+.icons-header {
+    display: flex;
+    align-content: flex-start;
+    flex-direction:row;
+}
+.circle-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 22.5px;
+    color: #BEBEBE;
+    position: relative;
+    padding: 0px 6px;
+    left: 50%;
+    top: -7%;
+    background-color: #F7F7F7;
+    box-shadow: 0 0 9px 6px rgba(0, 0, 0, 0.03);
+    transition:0.2s;
+}
+    .circle-icon:hover {
+        box-shadow: 0 0 5px 8px rgba(0, 0, 0, 0.06);
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        padding: 2px 9px;   
+        cursor: pointer;
+    }
+  
+.revers {
+    transform: rotate(-180deg);
+    display: block;
+}
+.title-section {
+    margin-bottom:75px;
+}
+.title-section h1 {
+    color: #383838;
+    font-size: 36px;
+    font-family: ROBOTOSLAB-BOLD;
+    line-height: 25px;
+}
+
+.title-section span {
+    color: #AAAAAA;
+    font-size:20px;
+    font-family:Roboto-Light;
+}
+.flex-row {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-content:center;
+}
+/*****************************************************
+*** Услуги ***
+*****************************************************/
+    .flex-row .nav-services {
+        font-family: Roboto-Regular;
+        color: #272727;
+        font-size: 20px;
+        height: 70px;
+        padding: 20px 45px;
+    }
+        .flex-row .nav-services.active {
+            background-color: #F7F7F7;
+        }
+    .flex-row .active {
+        font-family:Roboto-Bold;
+    }
+    .flex-row .icon {
+        padding: 10px;
+        font-size: 16px;
+        color: #BEBEBE;
+    }
+    .flex-row .active .icon {
+        color: #FF8035;
+    }
+
+.services-content {
+    background-color: #F7F7F7;
+}
+    .services-content .title {
+        color: #272727;
+        font-size:22px;
+        font-family:ROBOTOSLAB-REGULAR;
+        padding:25px 0;
+        text-align:center;
+    }

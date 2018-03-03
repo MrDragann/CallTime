@@ -151,11 +151,13 @@
   <ItemGroup>
     <Content Include="asserts\css\animate.min.css" />
     <Content Include="asserts\css\bootstrap.min.css" />
+    <Content Include="asserts\css\demo.css" />
     <Content Include="asserts\css\magnific-popup.css" />
     <Content Include="asserts\css\main.css" />
     <Content Include="asserts\css\mediaelementplayer.min.css" />
     <Content Include="asserts\css\normalize.css" />
     <Content Include="asserts\css\style.css" />
+    <Content Include="asserts\img\back header call time%402x.png" />
     <Content Include="asserts\img\back header call time.png" />
     <Content Include="asserts\img\logo call time.svg" />
     <Content Include="asserts\js\bootstrap.min.js" />
@@ -192,6 +194,7 @@
     <Content Include="fonts\Roboto\Roboto-Regular.ttf" />
     <Content Include="fonts\Roboto\Roboto-Thin.ttf" />
     <Content Include="fonts\Roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="fonts\IcoMoon-Free.ttf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

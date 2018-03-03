@@ -77,3 +77,10 @@
     font-family: 'ROBOTOSLAB-THIN';
     src: url('RobotoSlab/ROBOTOSLAB-THIN.TTF') format('truetype');
 }
+@font-face {
+    font-family: 'IcoMoon-Free';
+    src: url('IcoMoon-Free.ttf') format('truetype');
+}
+.icon-arrow-down2:before {
+    content: "\ea3e";
+}
