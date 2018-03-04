@@ -149,6 +149,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="asserts\css\animate.css" />
     <Content Include="asserts\css\animate.min.css" />
     <Content Include="asserts\css\bootstrap.min.css" />
     <Content Include="asserts\css\demo.css" />
@@ -160,6 +161,10 @@
     <Content Include="asserts\img\back header call time%402x.png" />
     <Content Include="asserts\img\back header call time.png" />
     <Content Include="asserts\img\logo call time.svg" />
+    <Content Include="asserts\img\man about.png" />
+    <Content Include="asserts\img\pattern-call-time.png" />
+    <Content Include="asserts\img\map.PNG" />
+    <Content Include="asserts\js\animate.js" />
     <Content Include="asserts\js\bootstrap.min.js" />
     <Content Include="asserts\js\jquery-2.1.4.min.js" />
     <Content Include="asserts\js\jquery.magnific-popup.min.js" />
@@ -195,6 +200,7 @@
     <Content Include="fonts\Roboto\Roboto-Thin.ttf" />
     <Content Include="fonts\Roboto\Roboto-ThinItalic.ttf" />
     <Content Include="fonts\IcoMoon-Free.ttf" />
+    <Content Include="asserts\js\jquery-inview.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -220,6 +226,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\Sections\Header.cshtml" />
+    <Content Include="Views\Shared\Sections\Services.cshtml" />
+    <Content Include="Views\Shared\Sections\BecomePartner.cshtml" />
+    <Content Include="Views\Shared\Sections\FactsFigures.cshtml" />
+    <Content Include="Views\Shared\Sections\About.cshtml" />
+    <Content Include="Views\Shared\Sections\Strive.cshtml" />
+    <Content Include="Views\Shared\Sections\Contacts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
