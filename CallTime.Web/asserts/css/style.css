@@ -8,13 +8,14 @@ html, body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
 }
+
 hr {
-   
     border: 0;
     margin: 0px 0 0px 0;
     border-top: 1px solid #000;
     opacity: 0.15;
 }
+
 .cf:before,
 .cf:after {
     content: "";
@@ -96,14 +97,16 @@ ul {
     ul > li {
         list-style: none;
     }
+
 a {
     color: inherit;
 }
-        a:hover,a:visited,a:focus {
-            text-decoration: none;
-            color: inherit;
-        }
-        
+
+    a:hover, a:visited, a:focus {
+        text-decoration: none;
+        color: inherit;
+    }
+
 
 /*****************************************************
 *** Buttons ***
@@ -457,6 +460,7 @@ input[type="tel"] {
 #incoming-service, #outgoing-service, #additional-service {
     display: none;
 }
+
     #incoming-service.active, #outgoing-service.active, #additional-service.active {
         display: block;
     }
@@ -524,7 +528,8 @@ input[type="tel"] {
 #about {
     padding: 75px 0 0;
     position: relative;
-    background-color: #F3F3F3;
+    background-image: url('../img/dust_scratches.png');
+    background-size: cover;
     height: 795px;
 }
 
@@ -617,7 +622,7 @@ input[type="tel"] {
 #contacts {
     padding: 170px 0;
     background-image: url('../img/map.PNG');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -643,7 +648,7 @@ input[type="tel"] {
         }
 
     .box-contact .contact .title-section.white {
-        margin-bottom:40px !important;
+        margin-bottom: 40px !important;
     }
 
         .box-contact .contact .title-section.white h1 {
@@ -710,12 +715,14 @@ input[type="tel"] {
     font-family: ROBOTOSLAB-BOLD;
     color: #FFFFFF;
 }
+
     .contact-info div a {
         font-size: 16px;
         font-family: ROBOTOSLAB-BOLD;
         color: #FFFFFF;
         d
     }
+
     .contact-info div {
         margin: 13px 0;
     }
@@ -725,6 +732,7 @@ input[type="tel"] {
         color: #FF8035;
         margin-right: 24px;
     }
+
 .on-map a {
     color: #FF8035;
     font-family: Roboto-Bold;
@@ -739,17 +747,258 @@ input[type="tel"] {
 /*****************************************************
 *** Footer ***
 *****************************************************/
-#footer {    
+#footer {
     color: #8c8f94;
     font-size: 16px;
 }
+
     #footer .container.footer-box {
         text-align: center;
         padding: 23px 0;
         font-family: ROBOTOSLAB-BOLD;
         color: #BEBEBE;
-        font-size:19px;
+        font-size: 19px;
     }
+
+
+
+
+/*****************************************************
+*** Solve problems ***
+*****************************************************/
+#solve-problems {
+    background-image: url('../img/back header ctt.png');
+    background-repeat: no-repeat;
+    margin-top: 130px;
+    background-size: auto 100%;
+    height: 1100px;
+}
+
+    #solve-problems .title-header p {
+        font-size: 30px;
+        font-family: Roboto-Medium;
+        color: #383838 !important;
+    }
+
+        #solve-problems .title-header p span {
+            color: #383838 !important;
+            text-decoration: underline;
+            text-decoration-color: #FF8035;
+        }
+
+    #solve-problems .desicription-header {
+        font-size: 16px;
+        color: #272727;
+        font-family: Roboto-Regular;
+    }
+
+.list-social {
+    display: flex;
+    width: 30%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .list-social a {
+        color: #383838;
+        font-size: 16px;
+        font-family: Roboto-Medium;
+    }
+
+/*****************************************************
+*** Problems ***
+*****************************************************/
+#problems {
+    background-color: #FFFFFF;
+    padding-bottom: 35px;
+}
+
+.list-problems {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+    .list-problems div {
+        margin: 0 47px 20px 0;
+        flex-basis: calc(50% - 100px);
+    }
+
+    .list-problems span.title {
+        color: #383838;
+        font-family: Roboto-Medium;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .list-problems p {
+        color: #383838;
+        display: inline-block;
+        font-family: Roboto-Regular;
+        font-size: 16px;
+    }
+
+.orange-line-bold {
+    display: block;
+    height: 2px;
+    background-color: #FF8035;
+    width: 65px;
+    margin-bottom: 25px;
+}
+
+
+/*****************************************************
+*** About token ***
+*****************************************************/
+#about-token {
+    background-color: #FFFFFF;
+    background-image: url('../img/dust_scratches.png');
+    background-size: cover;
+    padding: 80px 0;
+}
+
+    #about-token p {
+        color: #383838;
+        font-family: Roboto-Italic;
+        font-size: 25px;
+        display: inline-block;
+    }
+
+    #about-token .orange-line-bold {
+        position: relative;
+        top: 12px;
+        display: inline-block;
+    }
+
+.flex-about-token {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+    .flex-about-token div {
+        margin-right: 30px;
+    }
+
+
+
+
+/*****************************************************
+*** Our offers ***
+*****************************************************/
+#our-offers {
+    padding-bottom: 81px;
+}
+
+    #our-offers .flex-offers {
+        display: flex;
+        flex-direction: column;
+    }
+
+        #our-offers .flex-offers p {
+            font-family: Roboto-Regular;
+            font-size: 18px;
+            display: inline-block;
+            color: #272727;
+        }
+
+        #our-offers .flex-offers .orange-box {
+            display: inline-block;
+            background-color: #FF8035;
+            width: 11px;
+            height: 11px;
+            border-radius: 2px;
+            position: relative;
+            left: -22px;
+            top: 8px;
+        }
+
+.flex-offers div {
+    display: flex;
+    flex-direction: row;
+}
+
+.img-offer {
+    border: 16px solid #E9E9E9;
+    border-radius: 8px;
+    width: 350px;
+}
+
+    .img-offer img {
+        width: 100%;
+        position: relative;
+        left: -25px;
+        top: -25px;
+    }
+
+/*****************************************************
+*** Stages Project ***
+*****************************************************/
+#stages-project {
+    background-color: #F7F7F7;
+    min-height: 603px;
+}
+
+.background-year {
+    color: #BEBEBE;
+    font-size: 503px;
+    font-family: ROBOTOSLAB-REGULAR;
+    position: absolute;
+    opacity: 0.15;
+}
+
+.flex-stage {
+    display: flex;
+    flex-flow:row wrap;
+}
+    .flex-stage .black-text {
+        color: #272727;
+        font-size: 13px;
+        font-family: Roboto-Bold;
+    }
+    .flex-stage .orange-text {
+        color: #FF8035;
+        font-size: 11px;
+        font-family: Roboto-Bold;
+    }
+
+/*****************************************************
+*** Subscribe ***
+*****************************************************/
+#subscribe {
+    background-image: url('../img/pattern ctt.png');
+    padding:100px 0;
+}
+.flex-subscribe {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+}
+    .flex-subscribe div {
+        margin-right: 40px;
+    }
+    .flex-subscribe p {
+        color: #E5E5E5;
+        font-size:28px;
+        font-family:ROBOTOSLAB-BOLD;
+    }
+    .flex-subscribe input {
+        background-color: #383838;
+        color: #C7C7C7;
+        font-size:14px;
+        font-family:Roboto-Regular;
+    }
+        .flex-subscribe input[type="text"]:focus, .flex-subscribe input[type="email"]:focus, .flex-subscribe input[type="tel"]:focus {
+            color: #C7C7C7;
+        }
+
+@media screen and (max-width: 1400px) {
+    #problembs {
+        height: 811px;
+    }
+}
+
+
 
 
 /*****************************************************
@@ -778,132 +1027,45 @@ Responsive Styles
             top: 41px;
         }
     /*** Features ***/
-    #features {
+    #services {
         padding: 100px 0;
     }
 
-        #features .feature-item {
-            margin-bottom: 80px;
-        }
-
-            #features .feature-item:last-child {
-                margin-bottom: 0;
-            }
-
-        #features .feature {
-            padding: 0px 0px;
-        }
-
-            #features .feature .f-icon {
-                margin-bottom: 48px;
-            }
-
-                #features .feature .f-icon i {
-                    font-size: 42px;
-                    color: #267df4;
-                }
     /*** iPhone Feature ***/
-    #iphone-feature {
+    #become-partner {
         padding: 80px 0 60px;
     }
 
-        #iphone-feature .iphone-showcase {
-            position: relative;
-            bottom: auto;
-            right: auto;
-            padding: 0 15px;
-            margin-top: 64px;
-        }
-
-            #iphone-feature .iphone-showcase img {
-                width: 100%;
-            }
     /*** Map Feature ***/
-    #map-feature {
+    #facts-figurese {
         padding: 80px 0 100px;
     }
 
-        #map-feature .map-showcase {
-            position: relative;
-            bottom: auto;
-            left: auto;
-            padding: 0 15px;
-            margin-top: 64px;
-        }
-
-            #map-feature .map-showcase img {
-                width: 100%;
-            }
     /*** iPhone Screens ***/
-    #iphone-screens {
+    #about {
         padding: 120px 0 620px;
     }
 
-        #iphone-screens .images-list li {
-            position: absolute;
-            width: 240px;
-            top: 68px;
-        }
-
-            #iphone-screens .images-list li img {
-                max-width: 100%;
-            }
-
-            #iphone-screens .images-list li:nth-child(1) {
-                margin-left: -680px;
-            }
-
-            #iphone-screens .images-list li:nth-child(2) {
-                margin-left: -410px;
-            }
-
-            #iphone-screens .images-list li:nth-child(4) {
-                margin-right: -410px;
-            }
-
-            #iphone-screens .images-list li:nth-child(5) {
-                margin-right: -680px;
-            }
-
-            #iphone-screens .images-list li.main-img {
-                width: 295px;
-                margin-left: -148px;
-            }
-    /*** Customers ***/
-    #customers .carousel-control.left,
-    #customers .carousel-control.right {
-        display: none;
-    }
     /*** Plan ***/
-    #plan {
+    #strive {
         padding: 120px 0 150px;
     }
 
-        #plan #price_tables .individual.active, #plan #price_tables .company.active {
-            margin-top: 80px;
-        }
 
-        #plan .toggle-container .switch-toggles .individual, #plan .toggle-container .switch-toggles .company {
-            margin-top: 0;
-        }
     /*** Footer ***/
-    #footer .socials {
+    #contacts .socials {
         margin-bottom: 60px;
     }
-
-    #footer .footer-links {
-        margin-bottom: 30px;
-    }
-
-        #footer .footer-links:last-child {
-            margin-bottom: 0;
-        }
-    /*** Copyright Container ***/
-    .copyright-container .text-right {
-        text-align: left;
-        margin-top: 22px;
-    }
 }
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
     /*** iPhone Screens ***/
@@ -943,56 +1105,70 @@ Responsive Styles
             }
 }
 
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 575px) {
-    input[type="text"],
-    input[type="email"] {
-        padding: 16px 26px;
-    }
+
     /*** Header ***/
     #header {
-        padding: 160px 0 460px;
+        width: 945px;
+        height: 550px;
     }
 
-        #header .header_iphone {
-            bottom: -220px;
-            margin-left: -140px;
-            width: 280px;
-        }
-    /*** Ready to Buy  ***/
-    #ready-to-buy .form-group .btn,
-    #subscribe .form-group .btn {
-        position: relative;
-        margin-top: 14px;
-    }
-    /*** Customers ***/
-    #customers {
-        padding: 120px 0;
+
+    /*** services ***/
+    #services {
+        padding: 100px 0;
+        width: 950px;
     }
 
-        #customers .carousel-indicators li {
-            width: 90px;
-            height: 90px;
-        }
-    /*** Plan ***/
-    #plan {
-        padding: 120px 0 100px;
+    /*** become-partner ***/
+    #become-partner {
+        width: 950px;
     }
 
-        #plan .price-table {
-            width: 340px;
-            max-width: 100%;
-            padding: 0px 15px;
-            margin: 0 auto;
-            float: none;
-        }
+
     /*** Footer ***/
-    #footer .footer-container {
-        padding-top: 80px;
-        padding-bottom: 80px;
+    #facts-figurese {
+        width: 950px;
     }
 
-    #footer .footer-links {
-        width: 100%;
+    #about {
+        width: 950px;
+    }
+
+    #contacts {
+        width: 950px;
+    }
+
+    #strive {
+        width: 950px;
+    }
+
+    #footer {
+        width: 950px;
+    }
+
+    .item-img {
+        display: none;
+    }
+
+    #title-about {
+        text-align: center;
+    }
+
+    .box-contact {
+        visibility: visible !important;
+    }
+
+    #logo {
+        display: none;
     }
 }
 /*# sourceMappingURL=style.css.map */
