@@ -41,9 +41,12 @@
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
         var offset = $($.attr(this, 'href')).offset();
-        var header = $("#main-nav").height();
+        var dop = 10;
+        if ($.attr(this, 'href') === '#about')
+            dop += 90
+        var header = $("#main-nav").height() + dop;
         var parentClass = $(this).parent();
-        if (parentClass.hasClass("flex-item") ) {
+        if (parentClass.hasClass("flex-item")) {
             $(".flex-item").removeClass("active");
             parentClass.addClass("active");
         }
@@ -135,5 +138,68 @@
     //        }
     //    });
     //}
+    var first = true;
+    $(window).scroll(function () {
+        var problems = $("#problems");
+        if (problems.offset() !== undefined) {
+            if ($(document).scrollTop() - 200 + $(window).height() > problems.offset().top && $(document).scrollTop() + 200 - problems.offset().top < problems.height()) {
+                $("#first-problem").addClass("magictime  perspectiveLeftReturn");
+                setTimeout(function () {
+                    $("#second-problem").addClass("magictime  perspectiveLeftReturn");
+                }, 1000);
+                setTimeout(function () {
+                    $("#third-problem").addClass("magictime  perspectiveRightReturn");
+                }, 500);
+                setTimeout(function () {
+                    $("#fourth-problem").addClass("magictime  perspectiveRightReturn");
+                }, 1500);
+            }           
+         
+        }
+        if (first) {
+            var scrTop = $(window).scrollTop();
+            if (scrTop > $('.number').offset().top +400 - $(window).height()) {
+                number5Animate();
+                number24Animate();
+                number327Animate();
+                number42Animate();
+                first = false;
 
+            }
+        }
+ 
+
+    });
+    function number5Animate() {
+        var number = 1;
+        var result = $('.number-5').text();
+        setInterval(function () {
+            number++;
+            if (number <= result) { $('.number-5').text(number); };
+        }, 520);
+    };
+    function number24Animate() {
+        var number = 1;
+        var result = $('.number-24').text();
+        setInterval(function () {
+            number++;
+            if (number <= result) { $('.number-24').text(number); };
+        }, 70);
+    };
+    function number327Animate() {
+        var number = 1;
+        var result = $('.number-327').text();
+        setInterval(function () {
+            number++;
+            if (number <= result) { $('.number-327').text(number); };
+        }, 5);
+    };
+    function number42Animate() {
+        var number = 1;
+        var result = $('.number-42').text();
+        setInterval(function () {
+            number++;
+            if (number <= result) { $('.number-42').text(number); };
+        }, 45);
+    };
 });

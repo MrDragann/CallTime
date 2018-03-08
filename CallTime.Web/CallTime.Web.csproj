@@ -153,6 +153,7 @@
     <Content Include="asserts\css\animate.min.css" />
     <Content Include="asserts\css\bootstrap.min.css" />
     <Content Include="asserts\css\demo.css" />
+    <Content Include="asserts\css\magic.css" />
     <Content Include="asserts\css\magnific-popup.css" />
     <Content Include="asserts\css\main.css" />
     <Content Include="asserts\css\mediaelementplayer.min.css" />
@@ -245,6 +246,8 @@
     <Content Include="Views\Shared\Token\OurOffers.cshtml" />
     <Content Include="Views\Shared\Token\StagesProject.cshtml" />
     <Content Include="Views\Shared\Token\Subscribe.cshtml" />
+    <Content Include="Views\Shared\Token\Layout\_Layout.cshtml" />
+    <Content Include="Views\Shared\Token\Layout\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

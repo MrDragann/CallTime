@@ -328,6 +328,7 @@
     background-color: #FF8035;
     background: linear-gradient(to right,#F7F7F7, #FAD0B8, #FF8035 );
     top: -80px;
+
 }
 .arrow.small {
     opacity:0.15;
@@ -361,9 +362,42 @@
 
 
 
+#third-problem {
+    opacity:0;
+    transition:1s ease-in-out;
+}
+    #third-problem.magictime {
+        opacity:1;
+    }
 
-   
 
 
+#first-problem {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
 
+    #first-problem.magictime {
+        opacity: 1;
+    }
+
+
+#second-problem {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+    #second-problem.magictime {
+        opacity: 1;
+    }
+
+
+#fourth-problem {
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+    #fourth-problem.magictime {
+        opacity: 1;
+    }
 
