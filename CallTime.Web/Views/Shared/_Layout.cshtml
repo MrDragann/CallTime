@@ -16,6 +16,7 @@
     <link href="~/asserts/css/main.css" rel="stylesheet" />
     <link href="~/fonts/fonts.css" rel="stylesheet" />
     <link href="~/asserts/css/demo.css" rel="stylesheet" />
+    <link href="~/asserts/css/slick.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,6 +33,7 @@
 
     <script src="~/asserts/js/jquery-2.1.4.min.js"></script> <!-- jQuery -->
     <script src="~/asserts/js/typed.js"></script>
+    <script src="~/asserts/js/slick.js"></script>
     <script src="~/asserts/js/bootstrap.min.js"></script>  <!-- Bootstrap -->
     <script src="~/asserts/js/jquery-inview.js"></script>
     <script src="~/asserts/js/wow.min.js"></script>  <!-- wow -->
@@ -39,7 +41,22 @@
 
     <script src="~/asserts/js/main.js"></script>  <!-- Main Script -->    
     <script src="~/asserts/js/animate.js"></script>
-
+    <script>
+           $(document).ready(function () {
+               $('.slick-header').slick({
+                   dots: true,
+                   dotsClass: "my-dots",
+                   infinite: true,
+                   speed: 300,
+                   slidesToShow: 1,
+                   adaptiveHeight: true,
+                   arrows: false,
+                   autoplay: true,
+                   autoplaySpeed:2500
+               });
+         
+           });
+    </script>
 
 </body>
 </html>

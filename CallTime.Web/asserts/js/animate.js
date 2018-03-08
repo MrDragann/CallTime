@@ -5,8 +5,14 @@
         setTimeout(function () {
             btn.removeClass('animated  bounce');
         }, 900);
-    }
-    );
+    });
+    $("#subscribe").hover(function () {
+        var btn = $("#subscribe").find(".btn-orange");
+        btn.addClass('animated  bounce');
+        setTimeout(function () {
+            btn.removeClass('animated  bounce');
+        }, 900);
+    });
     $("#arrow-down").hover(function () {
         $(this).addClass('animated  rubberBand');
         var self = this;

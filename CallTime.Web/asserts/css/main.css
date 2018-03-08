@@ -81,9 +81,10 @@
     flex-direction: column;
     justify-content: space-around;
 }
-
+    
     .flex-column .title-header, .flex-column .desicription-header {
         width: 50%;
+    
     }
 
 .title-header {
@@ -401,3 +402,71 @@
         opacity: 1;
     }
 
+
+.my-dots {
+    position: absolute;
+    bottom: -65px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+
+}
+
+    .my-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 0px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+        .my-dots li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+        }
+
+            .my-dots li button:hover,
+            .my-dots li button:focus {
+                outline: none;
+            }
+
+                .my-dots li button:hover:before,
+                .my-dots li button:focus:before {
+                    opacity: 1;
+                }
+
+            .my-dots li button:before {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 2.5px;
+                background-color: #BEBEBE;
+                transition:0.3s ease-in-out;
+
+            }
+
+        .my-dots li.slick-active button:before {
+            width: 13px;
+            height: 13px;
+            border-radius: 6.5px;
+            border: 2px solid #BEBEBE;
+            background-color: transparent;
+            position: relative;
+            top: 4px;
+        }
+.slick-initialized .slick-slide {
+    outline:none !important;
+}

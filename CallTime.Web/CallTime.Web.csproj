@@ -158,6 +158,7 @@
     <Content Include="asserts\css\main.css" />
     <Content Include="asserts\css\mediaelementplayer.min.css" />
     <Content Include="asserts\css\normalize.css" />
+    <Content Include="asserts\css\slick.css" />
     <Content Include="asserts\css\style.css" />
     <Content Include="asserts\img\490302.jpg" />
     <Content Include="asserts\img\back header call time%402x.png" />
@@ -174,6 +175,7 @@
     <Content Include="asserts\js\jquery-2.1.4.min.js" />
     <Content Include="asserts\js\jquery.magnific-popup.min.js" />
     <Content Include="asserts\js\main.js" />
+    <Content Include="asserts\js\slick.js" />
     <Content Include="asserts\js\typed.js" />
     <Content Include="asserts\js\wow.min.js" />
     <Content Include="Content\bootstrap.css" />

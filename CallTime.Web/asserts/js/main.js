@@ -94,10 +94,20 @@
 
     $(".icon-circle-down").click(function () {
         var li = $(this).parent().parent();
-        if (li.hasClass("active"))
-            li.removeClass("active");
-        else
+        if (li.hasClass("active")) {
+           
+            li.children().find("p").addClass("animated fadeOutDown");
+            setTimeout(function () {
+                li.removeClass("active");
+                li.children().find("p").removeClass("animated fadeOutDown");
+            }, 600);
+          
+            //li.children().find("p").removeClass("animated slideInUp");
+        }
+        else {
             li.addClass("active");
+          
+        }
     });
    //ывывыв
 	$(".typed").typed({
