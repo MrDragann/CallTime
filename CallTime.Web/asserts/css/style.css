@@ -671,7 +671,7 @@ input[type="tel"] {
         }
 
     .box-contact .feedback {
-        padding: 30px 95px;
+        padding: 30px 50px;
         background-color: #FFFFFF;
         flex-grow: 2;
     }
@@ -703,7 +703,7 @@ input[type="tel"] {
     
 
     .feedback-form .item {
-        margin-right: 30px;
+        margin-right: 15px;
         flex-basis: 100%;
     }
 
@@ -1488,14 +1488,7 @@ a.animated-button.victoria-four {
 
 
 
-/* necessary to give position: relative to parent. */
-input[type="text"] {
-    font: 15px/24px 'Muli', sans-serif;
-    color: #C7C7C7;
-    width: 100%;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-}
+
 
 :focus {
     outline: none;
@@ -1516,7 +1509,7 @@ input[type="text"] {
 /* necessary to give position: relative to parent. */
 input[type="text"] {
     font: 15px/24px "Lato", Arial, sans-serif;
-    color: #C7C7C7;
+    color: #26272d;
     width: 100%;
     box-sizing: border-box;
     letter-spacing: 1px;
