@@ -12,5 +12,9 @@ namespace CallTime.Web.Controllers
         {
             return View();
         }
+        public ActionResult Token()
+        {
+            return View();
+        }
     }
 }

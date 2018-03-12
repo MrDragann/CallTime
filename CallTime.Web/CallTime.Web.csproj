@@ -149,9 +149,39 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="asserts\css\animate.css" />
+    <Content Include="asserts\css\animate.min.css" />
+    <Content Include="asserts\css\bootstrap.min.css" />
+    <Content Include="asserts\css\demo.css" />
+    <Content Include="asserts\css\magic.css" />
+    <Content Include="asserts\css\magnific-popup.css" />
+    <Content Include="asserts\css\main.css" />
+    <Content Include="asserts\css\mediaelementplayer.min.css" />
+    <Content Include="asserts\css\normalize.css" />
+    <Content Include="asserts\css\slick.css" />
+    <Content Include="asserts\css\style.css" />
+    <Content Include="asserts\img\490302.jpg" />
+    <Content Include="asserts\img\back header call time%402x.png" />
+    <Content Include="asserts\img\back header call time.png" />
+    <Content Include="asserts\img\back header ctt.png" />
+    <Content Include="asserts\img\dust_scratches.png" />
+    <Content Include="asserts\img\logo call time.svg" />
+    <Content Include="asserts\img\man about.png" />
+    <Content Include="asserts\img\pattern ctt.png" />
+    <Content Include="asserts\img\pattern-call-time.png" />
+    <Content Include="asserts\img\map.PNG" />
+    <Content Include="asserts\js\animate.js" />
+    <Content Include="asserts\js\bootstrap.min.js" />
+    <Content Include="asserts\js\jquery-2.1.4.min.js" />
+    <Content Include="asserts\js\jquery.magnific-popup.min.js" />
+    <Content Include="asserts\js\main.js" />
+    <Content Include="asserts\js\slick.js" />
+    <Content Include="asserts\js\typed.js" />
+    <Content Include="asserts\js\wow.min.js" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fonts.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -160,6 +190,25 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="asserts\css\style.css.map" />
+    <Content Include="fonts\RobotoSlab\ROBOTOSLAB-BOLD.TTF" />
+    <Content Include="fonts\RobotoSlab\ROBOTOSLAB-LIGHT.TTF" />
+    <Content Include="fonts\RobotoSlab\ROBOTOSLAB-REGULAR.TTF" />
+    <Content Include="fonts\RobotoSlab\ROBOTOSLAB-THIN.TTF" />
+    <Content Include="fonts\Roboto\Roboto-Black.ttf" />
+    <Content Include="fonts\Roboto\Roboto-BlackItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Bold.ttf" />
+    <Content Include="fonts\Roboto\Roboto-BoldItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Italic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Light.ttf" />
+    <Content Include="fonts\Roboto\Roboto-LightItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Medium.ttf" />
+    <Content Include="fonts\Roboto\Roboto-MediumItalic.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Regular.ttf" />
+    <Content Include="fonts\Roboto\Roboto-Thin.ttf" />
+    <Content Include="fonts\Roboto\Roboto-ThinItalic.ttf" />
+    <Content Include="fonts\IcoMoon-Free.ttf" />
+    <Content Include="asserts\js\jquery-inview.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -183,6 +232,24 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\Index\Header.cshtml" />
+    <Content Include="Views\Shared\Index\Services.cshtml" />
+    <Content Include="Views\Shared\Index\BecomePartner.cshtml" />
+    <Content Include="Views\Shared\Index\FactsFigures.cshtml" />
+    <Content Include="Views\Shared\Index\About.cshtml" />
+    <Content Include="Views\Shared\Index\Strive.cshtml" />
+    <Content Include="Views\Shared\Index\Contacts.cshtml" />
+    <Content Include="Views\Home\Token.cshtml" />
+    <Content Include="Views\Shared\Token\SolveProblems.cshtml" />
+    <Content Include="Views\Shared\Token\Problems.cshtml" />
+    <Content Include="Views\Shared\Token\About.cshtml" />
+    <Content Include="Views\Shared\Token\OurOffers.cshtml" />
+    <Content Include="Views\Shared\Token\StagesProject.cshtml" />
+    <Content Include="Views\Shared\Token\Subscribe.cshtml" />
+    <Content Include="Views\Shared\Token\Layout\_Layout.cshtml" />
+    <Content Include="Views\Shared\Token\Layout\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

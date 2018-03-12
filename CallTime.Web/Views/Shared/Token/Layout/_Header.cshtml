@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<header id="main-nav">
+    <div class="top-header ">
+        <div class="container">
+            <div class="col-md-6 flex-top-header">
+
+                <div><a href="@Url.Action("Index","Home")">Call-центр</a></div>
+                <div><a href="@Url.Action("Token","Home")">Токен</a></div>
+                <div><a href="http://call-time.ru/wp-login.php?simplemodal-login">Личный кабинет</a></div>
+
+            </div>
+            <div class="col-md-4 flex-nav-header pull-right">
+                <div class="flex-item"><a href="" class="active">РУС</a></div>
+                <div class="flex-item"><a href="">ENG</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container">
+            <div class="col-md-2 flex-nav-header" id="logo">
+                <div class="flex-item">
+                    <img src="~/asserts/img/logo call time.svg" height="39" width="111" />
+                </div>
+            </div>
+            <div class="col-md-10  flex-nav-header">
+
+                <div class="active flex-item  nav-solve-problems"><a href="#solve-problems">Проблемы</a></div>
+                <div class="flex-item nav-about-token"><a href="#about-token">О нас</a></div>
+                <div class="flex-item  nav-our-offers"><a href="#our-offers">Предложение </a></div>
+                <div class="flex-item nav-stages-project"> <a href="#stages-project">Развитие</a></div>                
+            </div>
+        </div>
+    </div>
+</header><!-- //Main Nav -->
