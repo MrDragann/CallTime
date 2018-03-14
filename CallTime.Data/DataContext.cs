@@ -14,6 +14,7 @@ namespace CallTime.Data
 
         public DbSet<Role> Roles { get; set; }
 
+        public DbSet<Visit> Visits { get; set; }
         //public DbSet<Setting> Settings { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder mb)

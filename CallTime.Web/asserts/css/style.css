@@ -632,18 +632,24 @@ input[type="tel"] {
 *** Contacts ***
 *****************************************************/
 #contacts {
-    padding: 170px 0;
-    background-image: url('../img/map.PNG');
+
+    height: 790px;
+    /*background-image: url('../img/map.PNG');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .box-contact {
     display: flex;
     flex-direction: row;
 }
-
-
+.box-contact {
+    margin-top: 170px;
+    transition: 2s ease-in-out;
+}
+    .box-contact .feedback, .box-contact .contact {
+        transition: 1s ease-in-out;
+    }
     .box-contact .feedback .title-section {
         margin-bottom: 35px !important;
     }
@@ -735,20 +741,23 @@ input[type="tel"] {
         font-size: 16px;
         font-family: ROBOTOSLAB-BOLD;
         color: #FFFFFF;
-        d
+        
     }
 
     .contact-info div {
         margin: 13px 0;
+        cursor: pointer;
     }
 
     .contact-info span {
         font-size: 18px;
         color: #FF8035;
         margin-right: 24px;
+      
     }
 
 .on-map a {
+    cursor:pointer;
     color: #FF8035;
     font-family: Roboto-Bold;
     font-size: 12px;
@@ -758,6 +767,24 @@ input[type="tel"] {
     left: 85%;
     top: 65px;
 }
+.on-form {
+    display: none;
+    background-color: #272727;
+
+    height: 20px;
+}
+    .on-form a {
+        cursor: pointer;
+        color: #FF8035;
+        font-family: Roboto-Bold;
+        font-size: 43px;
+        text-transform: uppercase;
+        position: relative;
+        left: 96%;
+        top: 13px;
+        text-shadow: #fff -1px -1px 0, #333 1px 1px 0;
+        z-index: 99;
+    }
 
 /*****************************************************
 *** Footer ***

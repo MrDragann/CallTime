@@ -76,6 +76,7 @@
     <Compile Include="Interfaces\IAuthCommonService.cs" />
     <Compile Include="Interfaces\IModuleService.cs" />
     <Compile Include="Interfaces\ISettingService.cs" />
+    <Compile Include="Interfaces\IStatisticService.cs" />
     <Compile Include="Models\Base\BaseFilter.cs" />
     <Compile Include="Models\DictionaryModel.cs" />
     <Compile Include="Models\Requests\PaginationFilterRequest.cs" />
@@ -104,6 +105,7 @@
     <Compile Include="Services\Static\CryptographyService.cs" />
     <Compile Include="Services\Static\EnumService.cs" />
     <Compile Include="Services\Static\ImageManager.cs" />
+    <Compile Include="Services\Statistic\StatisticService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

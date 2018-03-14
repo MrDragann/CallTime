@@ -1,8 +1,50 @@
+<style>
+    /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+    #map {
+        pointer-events: none;
+        width: 100%;
+        height: 790px;
+        position: absolute;
+    }
+
+</style>
+
+<script>
+    var map;
+    function initMap() {
+        var myLatLng = { lat: 46.842587, lng: 29.663346 };
+        var myLatLng2 = { lat: 46.825538, lng: 29.474121 };
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 17,
+            center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            title: 'Тираспольский офис'
+        });
+        var marker2 = new google.maps.Marker({
+            position: myLatLng2,
+            map: map,
+            title: 'Бендерский офис'
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB0d-e17WPQPAOhV6WxqQz1p2OouxUD0v8&callback=initMap"
+        async defer></script>
 
 <section id="contacts">
+  
+        <div id="on-form" class="on-form">
+            <a>X</a>
+        </div>
+
+    <div id="map"></div>
     <div class="container">
-        <div class="box-contact wow zoomIn animated">
-            <div class="feedback">
+        <div id="box-contact" class="box-contact wow zoomIn animated">
+            <div  class="feedback">
                 <div class="title-section">
                     <h1>@Resource.FeedbackForm</h1>
                     <span>@Resource.NotFindAnswerToQuestion</span>
@@ -25,13 +67,13 @@
                         </div>
                         <div class="item">
                             <div class="col-3">
-                                <input type="tel" name="Phone" class="effect-3" required  placeholder="@Resource.Phone" />
+                                <input type="tel" name="Phone" class="effect-3" required placeholder="@Resource.Phone" />
                                 <span class="focus-border">
                                     <i></i>
                                 </span>
                             </div>
                             <div class="col-3">
-                                <input type="text" name="Company"  class="effect-3"  placeholder="@Resource.CompanyOptional " />
+                                <input type="text" name="Company" class="effect-3" placeholder="@Resource.CompanyOptional " />
                                 <span class="focus-border">
                                     <i></i>
                                 </span>
@@ -62,10 +104,10 @@
                     <span>Получите консультацию по телефону или заходите к нам</span>
                 </div>
                 <div class="contact-info">
-                    <div class="wow flipInX" data-wow-delay="0.6s">
+                    <div class="wow flipInX" id="Tiraspol" data-wow-delay="0.6s">
                         <span class="icon icon-location2"></span>Тирасполь, Одесская 86\1
                     </div>
-                    <div class="wow flipInX" data-wow-delay="0.9s">
+                    <div class="wow flipInX" id="Bender" data-wow-delay="0.9s">
                         <span class="icon icon-location2"></span>Бендеры, Ленина 6
                     </div>
                     <div class="wow flipInX" data-wow-delay="1.2s">
@@ -81,11 +123,13 @@
                         <span class="icon icon-vk"></span><a href="https://vk.com">Вконтакте</a>
                     </div>
                 </div>
-                <div class="on-map">
-                    <a href="#">На карте</a>
+                <div id="onMap" class="on-map">
+                    <a>На карте</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
+
+  

@@ -1,44 +1,135 @@
 ﻿<!-- Header -->
 @Html.Partial("~/Views/Shared/Index/Header.cshtml")
 <!-- /Header -->
-
 <!-- Services -->
 @Html.Partial("~/Views/Shared/Index/Services.cshtml")
 <!-- /Services -->
-
 <!-- BecomePartner -->
 @Html.Partial("~/Views/Shared/Index/BecomePartner.cshtml")
 <!-- /BecomePartner -->
-
 <!-- FactsFigures -->
 @Html.Partial("~/Views/Shared/Index/FactsFigures.cshtml")
 <!-- /FactsFigures -->
-
 <!-- About -->
 @Html.Partial("~/Views/Shared/Index/About.cshtml")
 <!-- /About -->
-
 <!-- Strive -->
 @Html.Partial("~/Views/Shared/Index/Strive.cshtml")
 <!-- /Strive -->
-
 <!-- Contacts -->
 @Html.Partial("~/Views/Shared/Index/Contacts.cshtml")
 <!-- /Contacts -->
 
 @section Scripts {
-<script>
-    var first = true;
-    if (first) {
-        var scrTop = $(window).scrollTop();
-        if (scrTop > $('.number').offset().top + 400 - $(window).height()) {
-            number5Animate();
-            number24Animate();
-            number327Animate();
-            number42Animate();
-            first = false;
+    <script>
+        function number5Animate() {
+            var number = 1;
+            var result = $('.number-5').text();
+            setInterval(function () {
+                number++;
+                if (number <= result) { $('.number-5').text(number); };
+            }, 520);
+        };
+        function number24Animate() {
+            var number = 1;
+            var result = $('.number-24').text();
+            setInterval(function () {
+                number++;
+                if (number <= result) { $('.number-24').text(number); };
+            }, 70);
+        };
+        function number327Animate() {
+            var number = 1;
+            var result = $('.number-327').text();
+            setInterval(function () {
+                number++;
+                if (number <= result) { $('.number-327').text(number); };
+            }, 5);
+        };
+        function number42Animate() {
+            var number = 1;
+            var result = $('.number-42').text();
+            setInterval(function () {
+                number++;
+                if (number <= result) { $('.number-42').text(number); };
+            }, 45);
+        };
+        var first = true;
+        if (first) {
+            var scrTop = $(window).scrollTop();
+            if (scrTop > $('.number').offset().top + 400 - $(window).height()) {
+                number5Animate();
+                number24Animate();
+                number327Animate();
+                number42Animate();
+                first = false;
 
+            }
         }
-    }
-</script>
-    }
+        var onMap = function () {
+            $(".feedback").css("opacity", "0");
+            $(".contact").css("opacity", "0");
+            setTimeout(function () {
+                $("#contacts").css("height", "809px");
+                $("#map").css("pointerEvents", "auto");
+                $("#box-contact").css("display", "none");
+                $("#on-form").css("display", "block");
+            }, 1000);
+        }
+        var onForm = function () {
+            $("#contacts").css("height", "790px");
+            $("#map").css("pointerEvents", "none");
+            $("#box-contact").css("display", "flex");
+            $(".feedback").css("opacity", "1");
+            $(".contact").css("opacity", "1");
+            $("#on-form").css("display", "none");
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            var myLatLng = { lat: 46.842587, lng: 29.663346 };
+            var myLatLng2 = { lat: 46.825538, lng: 29.474121 };
+            $("#onMap").click(function () {
+                onMap();             
+            })
+            $("#on-form").click(function () {
+                onForm();
+            })
+            $("#Tiraspol").click(function () {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: { lat: 46.842587, lng: 29.663346 }
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Тираспольский офис'
+                });
+                var marker2 = new google.maps.Marker({
+                    position: myLatLng2,
+                    map: map,
+                    title: 'Бендерский офис'
+                });
+                onMap();        
+            });
+            $("#Bender").click(function () {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: { lat: 46.825538, lng: 29.474121 }
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Тираспольский офис'
+                });
+                var marker2 = new google.maps.Marker({
+                    position: myLatLng2,
+                    map: map,
+                    title: 'Бендерский офис'
+                });
+                onMap();        
+            });
+        });
+    </script>
+}

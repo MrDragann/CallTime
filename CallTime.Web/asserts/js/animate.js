@@ -166,36 +166,5 @@
  
 
     });
-    function number5Animate() {
-        var number = 1;
-        var result = $('.number-5').text();
-        setInterval(function () {
-            number++;
-            if (number <= result) { $('.number-5').text(number); };
-        }, 520);
-    };
-    function number24Animate() {
-        var number = 1;
-        var result = $('.number-24').text();
-        setInterval(function () {
-            number++;
-            if (number <= result) { $('.number-24').text(number); };
-        }, 70);
-    };
-    function number327Animate() {
-        var number = 1;
-        var result = $('.number-327').text();
-        setInterval(function () {
-            number++;
-            if (number <= result) { $('.number-327').text(number); };
-        }, 5);
-    };
-    function number42Animate() {
-        var number = 1;
-        var result = $('.number-42').text();
-        setInterval(function () {
-            number++;
-            if (number <= result) { $('.number-42').text(number); };
-        }, 45);
-    };
+   
 });
