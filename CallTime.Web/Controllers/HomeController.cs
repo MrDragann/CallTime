@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CallTime.Web.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,6 +16,14 @@ namespace CallTime.Web.Controllers
         public ActionResult Token()
         {
             return View();
+        }
+
+        public ActionResult Feedback(ModelFeedback model)
+        {
+            model.Subject = "Обратная связь";
+            model.Text = ModelEmailFeedBack.GetHtmlText(model);
+            Emailer.Send(model.Text, model.Subject);
+            return RedirectToAction("Index");
         }
     }
 }
