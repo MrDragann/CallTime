@@ -90,6 +90,10 @@ a {
     font-weight: 400;
 }
 
+.upper {
+    text-transform: uppercase;
+}
+
 ul {
     padding-left: 0px;
 }

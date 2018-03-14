@@ -1,0 +1,44 @@
+﻿@using CallTime.Web.Infrastructure
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<!-- BEGIN HEAD -->
+<head>
+    <meta charset="utf-8" />
+    <title>Admin</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    @Html.Partial("Partial/_styles")
+    <link rel="shortcut icon" href="~/assets/img/favicon.ico" />
+    @RenderSection("styles", false)
+</head>
+<!-- END HEAD -->
+<body class="page-header-fixed page-sidebar-closed-hide-logo">
+    <!-- BEGIN CONTAINER -->
+    <div class="wrapper">
+        <!-- BEGIN HEADER -->
+        @Html.Partial("Partial/HeaderPartial")
+        <!-- END HEADER -->
+        <div class="container-fluid">
+            <div class="page-content">
+                <!-- BEGIN BREADCRUMBS -->
+                @RenderSection("breadcrumb", required: false)
+                <!-- END BREADCRUMBS -->
+                <!-- BEGIN PAGE BASE CONTENT -->
+                @RenderBody()
+                <!-- END PAGE BASE CONTENT -->
+            </div>
+            <!-- BEGIN FOOTER -->
+            @Html.Partial("Partial/FooterPartial")
+            <!-- END FOOTER -->
+        </div>
+    </div>
+    <!-- END CONTAINER -->
+
+    @Html.Partial("Partial/_scripts")
+    @RenderSection("scripts", required: false)
+    <script src="~/Areas/Admin/assets/js/init.js"></script>
+</body>
+</html>
