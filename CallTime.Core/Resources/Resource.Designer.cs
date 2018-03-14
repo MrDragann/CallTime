@@ -70,11 +70,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Дополнительные услуги.
+        /// </summary>
+        public static string AdditionalServices {
+            get {
+                return ResourceManager.GetString("AdditionalServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Стать нашим партнером.
         /// </summary>
         public static string BecomeOurPartner {
             get {
                 return ResourceManager.GetString("BecomeOurPartner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Будьте уверены, что обращаетесь к профессионалам своего дела.
+        /// </summary>
+        public static string BeSureApplyingProfessionals {
+            get {
+                return ResourceManager.GetString("BeSureApplyingProfessionals", resourceCulture);
             }
         }
         
@@ -93,6 +111,15 @@ namespace Resources {
         public static string CallCenters {
             get {
                 return ResourceManager.GetString("CallCenters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Компания (необязательно).
+        /// </summary>
+        public static string CompanyOptional {
+            get {
+                return ResourceManager.GetString("CompanyOptional", resourceCulture);
             }
         }
         
@@ -120,6 +147,24 @@ namespace Resources {
         public static string CurrentLang {
             get {
                 return ResourceManager.GetString("CurrentLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Электронный адрес.
+        /// </summary>
+        public static string Email {
+            get {
+                return ResourceManager.GetString("Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Факты и цифры.
+        /// </summary>
+        public static string FactsAndFigures {
+            get {
+                return ResourceManager.GetString("FactsAndFigures", resourceCulture);
             }
         }
         
@@ -169,6 +214,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Текст вашего сообщения.
+        /// </summary>
+        public static string MessageText {
+            get {
+                return ResourceManager.GetString("MessageText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Не нашли ответ на нужный вопрос? Напишите нам.
+        /// </summary>
+        public static string NotFindAnswerToQuestion {
+            get {
+                return ResourceManager.GetString("NotFindAnswerToQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Предложение нашей компании.
         /// </summary>
         public static string OfferOfOurCompany {
@@ -178,11 +241,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Исходящие услуги.
+        /// </summary>
+        public static string OutboundServices {
+            get {
+                return ResourceManager.GetString("OutboundServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Личный кабинет.
         /// </summary>
         public static string PersonalArea {
             get {
                 return ResourceManager.GetString("PersonalArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Телефон.
+        /// </summary>
+        public static string Phone {
+            get {
+                return ResourceManager.GetString("Phone", resourceCulture);
             }
         }
         
@@ -205,6 +286,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Стремимся.
+        /// </summary>
+        public static string StriveTo {
+            get {
+                return ResourceManager.GetString("StriveTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Субподряд.
         /// </summary>
         public static string Subcontract {
@@ -219,6 +309,24 @@ namespace Resources {
         public static string Token {
             get {
                 return ResourceManager.GetString("Token", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ваше имя, например Иван.
+        /// </summary>
+        public static string YourNameEx {
+            get {
+                return ResourceManager.GetString("YourNameEx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Ваши персональные данные не будут переданы третьим лицам и остануться строго конфидициональны..
+        /// </summary>
+        public static string YourPersonalDataNotBeTransferred {
+            get {
+                return ResourceManager.GetString("YourPersonalDataNotBeTransferred", resourceCulture);
             }
         }
     }

@@ -120,14 +120,23 @@
   <data name="About" xml:space="preserve">
     <value>О нас</value>
   </data>
+  <data name="AdditionalServices" xml:space="preserve">
+    <value>Дополнительные услуги</value>
+  </data>
   <data name="BecomeOurPartner" xml:space="preserve">
     <value>Стать нашим партнером</value>
+  </data>
+  <data name="BeSureApplyingProfessionals" xml:space="preserve">
+    <value>Будьте уверены, что обращаетесь к профессионалам своего дела</value>
   </data>
   <data name="CallCenter" xml:space="preserve">
     <value>Call-центр</value>
   </data>
   <data name="CallCenters" xml:space="preserve">
     <value>Call-центров</value>
+  </data>
+  <data name="CompanyOptional" xml:space="preserve">
+    <value>Компания (необязательно)</value>
   </data>
   <data name="ConnectWithUs" xml:space="preserve">
     <value>Связаться с нами</value>
@@ -137,6 +146,12 @@
   </data>
   <data name="CurrentLang" xml:space="preserve">
     <value>ru</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Электронный адрес</value>
+  </data>
+  <data name="FactsAndFigures" xml:space="preserve">
+    <value>Факты и цифры</value>
   </data>
   <data name="FeedbackForm" xml:space="preserve">
     <value>Форма обратной связи</value>
@@ -153,11 +168,23 @@
   <data name="Lang" xml:space="preserve">
     <value>en</value>
   </data>
+  <data name="MessageText" xml:space="preserve">
+    <value>Текст вашего сообщения</value>
+  </data>
+  <data name="NotFindAnswerToQuestion" xml:space="preserve">
+    <value>Не нашли ответ на нужный вопрос? Напишите нам</value>
+  </data>
   <data name="OfferOfOurCompany" xml:space="preserve">
     <value>Предложение нашей компании</value>
   </data>
+  <data name="OutboundServices" xml:space="preserve">
+    <value>Исходящие услуги</value>
+  </data>
   <data name="PersonalArea" xml:space="preserve">
     <value>Личный кабинет</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Телефон</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Отправить</value>
@@ -165,10 +192,19 @@
   <data name="Services" xml:space="preserve">
     <value>Услуги</value>
   </data>
+  <data name="StriveTo" xml:space="preserve">
+    <value>Стремимся</value>
+  </data>
   <data name="Subcontract" xml:space="preserve">
     <value>Субподряд</value>
   </data>
   <data name="Token" xml:space="preserve">
     <value>Токен</value>
+  </data>
+  <data name="YourNameEx" xml:space="preserve">
+    <value>Ваше имя, например Иван</value>
+  </data>
+  <data name="YourPersonalDataNotBeTransferred" xml:space="preserve">
+    <value>Ваши персональные данные не будут переданы третьим лицам и остануться строго конфидициональны.</value>
   </data>
 </root>

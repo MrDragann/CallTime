@@ -120,14 +120,23 @@
   <data name="About" xml:space="preserve">
     <value>About Us</value>
   </data>
+  <data name="AdditionalServices" xml:space="preserve">
+    <value>Additional services</value>
+  </data>
   <data name="BecomeOurPartner" xml:space="preserve">
     <value>Become our partner</value>
+  </data>
+  <data name="BeSureApplyingProfessionals" xml:space="preserve">
+    <value>Be sure that you are applying to the professionals of your business</value>
   </data>
   <data name="CallCenter" xml:space="preserve">
     <value>Call-center</value>
   </data>
   <data name="CallCenters" xml:space="preserve">
     <value>Call-centers</value>
+  </data>
+  <data name="CompanyOptional" xml:space="preserve">
+    <value>Company (optional)</value>
   </data>
   <data name="ConnectWithUs" xml:space="preserve">
     <value>Connect with us</value>
@@ -138,6 +147,12 @@
   <data name="CurrentLang" xml:space="preserve">
     <value>en</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FactsAndFigures" xml:space="preserve">
+    <value>Facts and Figures</value>
+  </data>
   <data name="FeedbackForm" xml:space="preserve">
     <value>Feedback form</value>
   </data>
@@ -145,7 +160,7 @@
     <value>for</value>
   </data>
   <data name="InboundServices" xml:space="preserve">
-    <value>Inbound Services</value>
+    <value>Inbound services</value>
   </data>
   <data name="Jobs" xml:space="preserve">
     <value>Jobs</value>
@@ -153,11 +168,23 @@
   <data name="Lang" xml:space="preserve">
     <value>ru</value>
   </data>
+  <data name="MessageText" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="NotFindAnswerToQuestion" xml:space="preserve">
+    <value>Did not find the answer to your question? Contact Us</value>
+  </data>
   <data name="OfferOfOurCompany" xml:space="preserve">
     <value>Offer of our company</value>
   </data>
+  <data name="OutboundServices" xml:space="preserve">
+    <value>Outbound services</value>
+  </data>
   <data name="PersonalArea" xml:space="preserve">
     <value>Personal Area</value>
+  </data>
+  <data name="Phone" xml:space="preserve">
+    <value>Phone</value>
   </data>
   <data name="Send" xml:space="preserve">
     <value>Send</value>
@@ -165,10 +192,19 @@
   <data name="Services" xml:space="preserve">
     <value>Services</value>
   </data>
+  <data name="StriveTo" xml:space="preserve">
+    <value>Strive to</value>
+  </data>
   <data name="Subcontract" xml:space="preserve">
     <value>Subcontract</value>
   </data>
   <data name="Token" xml:space="preserve">
     <value>Token</value>
+  </data>
+  <data name="YourNameEx" xml:space="preserve">
+    <value>Your name, for example, Ivan</value>
+  </data>
+  <data name="YourPersonalDataNotBeTransferred" xml:space="preserve">
+    <value>Your personal data will not be transferred to third parties and remain strictly confidential.</value>
   </data>
 </root>
