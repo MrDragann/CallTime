@@ -26,6 +26,19 @@
 @Html.Partial("~/Views/Shared/Index/Contacts.cshtml")
 <!-- /Contacts -->
 
+@section Scripts {
+<script>
+    var first = true;
+    if (first) {
+        var scrTop = $(window).scrollTop();
+        if (scrTop > $('.number').offset().top + 400 - $(window).height()) {
+            number5Animate();
+            number24Animate();
+            number327Animate();
+            number42Animate();
+            first = false;
 
-
-<!---->
+        }
+    }
+</script>
+    }

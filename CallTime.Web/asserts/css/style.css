@@ -704,7 +704,7 @@ input[type="tel"] {
         line-height: 18px;
     }
 
-    
+
 
     .feedback-form .item {
         margin-right: 15px;
@@ -906,6 +906,10 @@ input[type="tel"] {
     padding-bottom: 81px;
 }
 
+    #our-offers .title-section {
+        margin-bottom: 100px;
+    }
+
     #our-offers .flex-offers {
         display: flex;
         flex-direction: column;
@@ -937,14 +941,16 @@ input[type="tel"] {
 .img-offer {
     border: 16px solid #E9E9E9;
     border-radius: 8px;
-    width: 350px;
+    width: 380px;
+    height: 410px;
 }
 
     .img-offer img {
         width: 100%;
         position: relative;
-        left: -25px;
-        top: -25px;
+        left: -16px;
+        top: -50px;
+        border-radius: 10px;
     }
 
 /*****************************************************

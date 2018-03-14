@@ -155,6 +155,9 @@
     <Compile Include="Infrastructure\AuthorizeViewPage.cs" />
     <Compile Include="Infrastructure\ConstRoles.cs" />
     <Compile Include="Infrastructure\WebUser.cs" />
+	 <Compile Include="Models\Emailer.cs" />
+    <Compile Include="Models\ModelEmailFeedBack.cs" />
+    <Compile Include="Models\ModelFeedback.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -170,11 +173,11 @@
     <Content Include="asserts\css\normalize.css" />
     <Content Include="asserts\css\slick.css" />
     <Content Include="asserts\css\style.css" />
-    <Content Include="asserts\img\490302.jpg" />
     <Content Include="asserts\img\back header call time%402x.png" />
     <Content Include="asserts\img\back header call time.png" />
     <Content Include="asserts\img\back header ctt.png" />
     <Content Include="asserts\img\dust_scratches.png" />
+    <Content Include="asserts\img\employes.png" />
     <Content Include="asserts\img\logo call time.svg" />
     <Content Include="asserts\img\man about.png" />
     <Content Include="asserts\img\pattern ctt.png" />
