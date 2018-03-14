@@ -88,6 +88,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Бендеры, Ленина 6.
+        /// </summary>
+        public static string BenderLenin {
+            get {
+                return ResourceManager.GetString("BenderLenin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Будьте уверены, что обращаетесь к профессионалам своего дела.
         /// </summary>
         public static string BeSureApplyingProfessionals {
@@ -187,6 +196,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Получите консультацию по телефону или заходите к нам.
+        /// </summary>
+        public static string GetAdviceByPhoneOrVisit {
+            get {
+                return ResourceManager.GetString("GetAdviceByPhoneOrVisit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Входящие услуги.
         /// </summary>
         public static string InboundServices {
@@ -241,6 +259,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на На карте.
+        /// </summary>
+        public static string OnMap {
+            get {
+                return ResourceManager.GetString("OnMap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Исходящие услуги.
         /// </summary>
         public static string OutboundServices {
@@ -268,11 +295,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Проблемы.
+        /// </summary>
+        public static string Problems {
+            get {
+                return ResourceManager.GetString("Problems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Отправить.
         /// </summary>
         public static string Send {
             get {
                 return ResourceManager.GetString("Send", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Предложение.
+        /// </summary>
+        public static string Sentence {
+            get {
+                return ResourceManager.GetString("Sentence", resourceCulture);
             }
         }
         
@@ -304,11 +349,47 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Подписаться.
+        /// </summary>
+        public static string Subscribe {
+            get {
+                return ResourceManager.GetString("Subscribe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Подпишись и мы оповестим тебя о развитии нашего проекта.
+        /// </summary>
+        public static string SubscribeAndWeNotifyYou {
+            get {
+                return ResourceManager.GetString("SubscribeAndWeNotifyYou", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Тирасполь, Одесская 86\1.
+        /// </summary>
+        public static string TiraspolOdessa {
+            get {
+                return ResourceManager.GetString("TiraspolOdessa", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Токен.
         /// </summary>
         public static string Token {
             get {
                 return ResourceManager.GetString("Token", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Вконтакте.
+        /// </summary>
+        public static string Vk {
+            get {
+                return ResourceManager.GetString("Vk", resourceCulture);
             }
         }
         

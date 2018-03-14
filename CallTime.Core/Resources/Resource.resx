@@ -207,4 +207,31 @@
   <data name="YourPersonalDataNotBeTransferred" xml:space="preserve">
     <value>Ваши персональные данные не будут переданы третьим лицам и остануться строго конфидициональны.</value>
   </data>
+  <data name="BenderLenin" xml:space="preserve">
+    <value>Бендеры, Ленина 6</value>
+  </data>
+  <data name="GetAdviceByPhoneOrVisit" xml:space="preserve">
+    <value>Получите консультацию по телефону или заходите к нам</value>
+  </data>
+  <data name="OnMap" xml:space="preserve">
+    <value>На карте</value>
+  </data>
+  <data name="TiraspolOdessa" xml:space="preserve">
+    <value>Тирасполь, Одесская 86\1</value>
+  </data>
+  <data name="Vk" xml:space="preserve">
+    <value>Вконтакте</value>
+  </data>
+  <data name="Problems" xml:space="preserve">
+    <value>Проблемы</value>
+  </data>
+  <data name="Sentence" xml:space="preserve">
+    <value>Предложение</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Подписаться</value>
+  </data>
+  <data name="SubscribeAndWeNotifyYou" xml:space="preserve">
+    <value>Подпишись и мы оповестим тебя о развитии нашего проекта</value>
+  </data>
 </root>

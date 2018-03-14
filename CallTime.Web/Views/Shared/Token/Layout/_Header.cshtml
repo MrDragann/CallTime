@@ -8,14 +8,13 @@
         <div class="container">
             <div class="col-md-6 flex-top-header">
 
-                <div><a href="@Url.Action("Index","Home")">Call-центр</a></div>
-                <div><a href="@Url.Action("Token","Home")">Токен</a></div>
-                <div><a href="http://call-time.ru/wp-login.php?simplemodal-login">Личный кабинет</a></div>
+                <div><a href="@Url.Action("Index","Home")">@Resource.CallCenter</a></div>
+                <div><a href="@Url.Action("Token","Home")">@Resource.Token</a></div>
+                <div><a href="http://call-time.ru/wp-login.php?simplemodal-login">@Resource.PersonalArea</a></div>
 
             </div>
             <div class="col-md-4 flex-nav-header pull-right">
-                <div class="flex-item"><a href="" class="active">РУС</a></div>
-                <div class="flex-item"><a href="">ENG</a></div>
+                @Url.LangSwitcher(ViewContext.RouteData, Resource.Lang)
             </div>
         </div>
     </div>
@@ -28,9 +27,9 @@
             </div>
             <div class="col-md-10  flex-nav-header">
 
-                <div class="active flex-item  nav-solve-problems"><a href="#solve-problems">Проблемы</a></div>
-                <div class="flex-item nav-about-token"><a href="#about-token">О нас</a></div>
-                <div class="flex-item  nav-our-offers"><a href="#our-offers">Предложение </a></div>
+                <div class="active flex-item  nav-solve-problems"><a href="#solve-problems">@Resource.Problems</a></div>
+                <div class="flex-item nav-about-token"><a href="#about-token">@Resource.About</a></div>
+                <div class="flex-item  nav-our-offers"><a href="#our-offers">@Resource.Sentence </a></div>
                 <div class="flex-item nav-stages-project"> <a href="#stages-project">Развитие</a></div>                
             </div>
         </div>

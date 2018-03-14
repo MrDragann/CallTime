@@ -207,4 +207,31 @@
   <data name="YourPersonalDataNotBeTransferred" xml:space="preserve">
     <value>Your personal data will not be transferred to third parties and remain strictly confidential.</value>
   </data>
+  <data name="BenderLenin" xml:space="preserve">
+    <value>Bender, Lenin str. 6</value>
+  </data>
+  <data name="GetAdviceByPhoneOrVisit" xml:space="preserve">
+    <value>Get advice by phone or visit us</value>
+  </data>
+  <data name="OnMap" xml:space="preserve">
+    <value>On the map</value>
+  </data>
+  <data name="TiraspolOdessa" xml:space="preserve">
+    <value>Tiraspol, Odessa str. 86\1</value>
+  </data>
+  <data name="Vk" xml:space="preserve">
+    <value>Vkontakte</value>
+  </data>
+  <data name="Problems" xml:space="preserve">
+    <value>Problems</value>
+  </data>
+  <data name="Sentence" xml:space="preserve">
+    <value>Sentence</value>
+  </data>
+  <data name="Subscribe" xml:space="preserve">
+    <value>Subscribe</value>
+  </data>
+  <data name="SubscribeAndWeNotifyYou" xml:space="preserve">
+    <value>Subscribe and we will notify you about the development of our project</value>
+  </data>
 </root>
