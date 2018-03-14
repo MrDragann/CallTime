@@ -1,18 +1,20 @@
 ﻿<section id="subscribe">
     <div class="container">
-        <div class="flex-subscribe">
-            <div>
-                <p>Подпишись и мы оповестим тебя о развитии нашего проекта</p>
+        <form action="@Url.Action("Subscribe","Home") method=" post"">
+            <div class="flex-subscribe">
+                <div>
+                    <p>Подпишись и мы оповестим тебя о развитии нашего проекта</p>
+                </div>
+                <div class="col-3">
+                    <input type="email" style="width:100%;" name="email" required class="effect-8" placeholder="mail@youmail.com" />
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-orange btn-small ">ПОДПИСАТЬСЯ</button>
+                </div>
             </div>
-            <div class="col-3">
-                <input type="text" class="effect-8" placeholder="mail@youmail.com"/>
-                <span class="focus-border">
-                    <i></i>
-                </span>
-            </div>
-            <div>
-                <button class="btn btn-orange btn-small ">ПОДПИСАТЬСЯ</button>
-            </div>
-        </div>
+        </form>
     </div>
 </section>

@@ -39,23 +39,24 @@
     <script src="~/asserts/js/wow.min.js"></script>  <!-- wow -->
     <script src="~/asserts/js/jquery.magnific-popup.min.js"></script>  <!-- wow -->
 
-    <script src="~/asserts/js/main.js"></script>  <!-- Main Script -->    
+    <script src="~/asserts/js/main.js"></script>  <!-- Main Script -->
     <script src="~/asserts/js/animate.js"></script>
+    @RenderSection("scripts", required: false)
     <script>
-           $(document).ready(function () {
-               $('.slick-header').slick({
-                   dots: true,
-                   dotsClass: "my-dots",
-                   infinite: true,
-                   speed: 300,
-                   slidesToShow: 1,
-                   adaptiveHeight: true,
-                   arrows: false,
-                   autoplay: true,
-                   autoplaySpeed:2500
-               });
-         
-           });
+        $(document).ready(function () {
+            $('.slick-header').slick({
+                dots: true,
+                dotsClass: "my-dots",
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 2500
+            });
+
+        });
     </script>
 
 </body>

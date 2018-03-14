@@ -21,24 +21,24 @@
         }, 900);
     });
     $(".plus").hover(function () {
-        $(this).addClass('animated  rubberBand');
+        $(this).addClass('animated  pulse');
         var self = this;
         setTimeout(function () {
-            $(self).removeClass('animated  rubberBand');
+            $(self).removeClass('animated  pulse');
         }, 900);
     });
     $(".arrow-up").hover(function () {
-        $(this).addClass('animated  tada');
+        $(this).addClass('animated  pulse');
         var self = this;
         setTimeout(function () {
-            $(self).removeClass('animated  tada');
+            $(self).removeClass('animated  pulse');
         }, 900);
     });
     $(".arrow-down").hover(function () {
-        $(this).addClass('animated  jello');
+        $(this).addClass('animated  pulse');
         var self = this;
         setTimeout(function () {
-            $(self).removeClass('animated  jello');
+            $(self).removeClass('animated  pulse');
         }, 900);
     });
 
@@ -162,17 +162,7 @@
             }           
          
         }
-        if (first) {
-            var scrTop = $(window).scrollTop();
-            if (scrTop > $('.number').offset().top +400 - $(window).height()) {
-                number5Animate();
-                number24Animate();
-                number327Animate();
-                number42Animate();
-                first = false;
-
-            }
-        }
+   
  
 
     });

@@ -111,7 +111,7 @@
     });
    //ывывыв
 	$(".typed").typed({
-        strings: [" Блокчейн и криптовалюты стали неотъемлемой частью современного общества, но большинство населения мало осведомлены о деталях … подпишись и мы осведомим, мать твою )."],
+        strings: ["криптовалютными биржами"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed

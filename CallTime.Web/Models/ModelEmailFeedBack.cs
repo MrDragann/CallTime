@@ -16,5 +16,10 @@ namespace CallTime.Web.Models
                 $"<br>Компания:{model.Company}" +
                 $"</p><p> Вопрос:{model.Text} </p>");            
         }
+        public static string GetHtmlTextSubscribe(string email)
+        {
+            return string.Format($"<p>Новый подписка на сайте CallTime. Данные пользователя:" +
+                $"<br>Почта:{email}");      
+        }
     }
 }

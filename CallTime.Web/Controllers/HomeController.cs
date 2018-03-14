@@ -18,6 +18,13 @@ namespace CallTime.Web.Controllers
             return View();
         }
 
+        public ActionResult Subscribe(string email)
+        {
+            var message = ModelEmailFeedBack.GetHtmlTextSubscribe(email);
+            Emailer.Send(message, "Подписка");
+            return RedirectToAction("Token");
+        }
+
         public ActionResult Feedback(ModelFeedback model)
         {
             model.Subject = "Обратная связь";
