@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
@@ -8,14 +7,13 @@
         <div class="container">
             <div class="col-md-6 flex-top-header">
 
-                <div><a href="@Url.Action("Index","Home")">Call-центр</a></div>
-                <div><a href="@Url.Action("Token","Home")">Токен</a></div>
-                <div><a href="http://call-time.ru/wp-login.php?simplemodal-login">Личный кабинет</a></div>
+                <div><a href="@Url.Action("Index","Home")">@Resource.CallCenter</a></div>
+                <div><a href="@Url.Action("Token","Home")">@Resource.Token</a></div>
+                <div><a href="http://call-time.ru/wp-login.php?simplemodal-login">@Resource.PersonalArea</a></div>
 
             </div>
-            <div class="col-md-4 flex-nav-header pull-right">   
-                <div class="flex-item"><a href="" class="active">РУС</a></div>
-                <div class="flex-item"><a href="">ENG</a></div>
+            <div class="col-md-4 flex-nav-header pull-right">
+                @Url.LangSwitcher(ViewContext.RouteData, Resource.Lang)
             </div>
         </div>
     </div>
@@ -28,10 +26,10 @@
             </div>
             <div class="col-md-10  flex-nav-header">
 
-                <div class="active flex-item  nav-services"><a href="#services" >Услуги</a></div>
-                <div class="flex-item nav-about"><a href="#about">О нас</a></div>
-                <div class="flex-item  nav-contacts"><a href="#contacts">Контакты</a></div>
-                <div class="flex-item nav-become-partner"> <a href="#become-partner">Вакансии</a></div>
+                <div class="active flex-item  nav-services"><a href="#services" >@Resource.Services</a></div>
+                <div class="flex-item nav-about"><a href="#about">@Resource.About</a></div>
+                <div class="flex-item  nav-contacts"><a href="#contacts">@Resource.Contacts</a></div>
+                <div class="flex-item nav-become-partner"> <a href="#become-partner">@Resource.Jobs</a></div>
 
             </div>
         </div>
