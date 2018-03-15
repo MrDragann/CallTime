@@ -8,14 +8,19 @@ namespace CallTime.Data
         public DataContext()
             : base("DefaultConnection") { }
         
-        //public DbSet<Banner> Banners { get; set; }
+        public DbSet<PageContent> PageContents { get; set; }
+
+        public DbSet<PageContentLang> PageContentLangs { get; set; }
 
         public DbSet<User> Users { get; set; }
 
         public DbSet<Role> Roles { get; set; }
 
         public DbSet<Visit> Visits { get; set; }
-        //public DbSet<Setting> Settings { get; set; }
+
+        public DbSet<PageSetting> PageSettings { get; set; }
+
+        public DbSet<PageSettingLang> PageSettingLangs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder mb)
         {

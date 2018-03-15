@@ -10,23 +10,19 @@ namespace CallTime.Data.Models
     {
         #region [ Свойства ]
 
-        [Key, ForeignKey("PageSetting"), Column(Order = 1)]
-        public int PageSettingId { get; set; }
+        [Key, ForeignKey("PageContent"), Column(Order = 1)]
+        public int PageContentId { get; set; }
 
         [Key, Column(Order = 2)]
         public int Lang { get; set; }
 
-        public string Title { get; set; }
-
-        public string Keywords { get; set; }
-
-        public string Description { get; set; }
+        public string Content { get; set; }
 
         #endregion
 
         #region [ Связанные объекты ]
 
-        public PageSetting PageSetting { get; set; }
+        public PageContent PageContent { get; set; }
 
         #endregion
     }

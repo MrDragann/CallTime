@@ -1,23 +1,24 @@
-﻿<!-- Header -->
-@Html.Partial("~/Views/Shared/Index/Header.cshtml")
+﻿@model CallTime.Web.Models.ViewModel
+<!-- Header -->
+@Html.Partial("~/Views/Shared/Index/Header.cshtml",Model)
 <!-- /Header -->
 <!-- Services -->
-@Html.Partial("~/Views/Shared/Index/Services.cshtml")
+@Html.Partial("~/Views/Shared/Index/Services.cshtml",Model)
 <!-- /Services -->
 <!-- BecomePartner -->
-@Html.Partial("~/Views/Shared/Index/BecomePartner.cshtml")
+@Html.Partial("~/Views/Shared/Index/BecomePartner.cshtml",Model)
 <!-- /BecomePartner -->
 <!-- FactsFigures -->
-@Html.Partial("~/Views/Shared/Index/FactsFigures.cshtml")
+@Html.Partial("~/Views/Shared/Index/FactsFigures.cshtml", Model)
 <!-- /FactsFigures -->
 <!-- About -->
-@Html.Partial("~/Views/Shared/Index/About.cshtml")
+@Html.Partial("~/Views/Shared/Index/About.cshtml", Model)
 <!-- /About -->
 <!-- Strive -->
-@Html.Partial("~/Views/Shared/Index/Strive.cshtml")
+@Html.Partial("~/Views/Shared/Index/Strive.cshtml", Model)
 <!-- /Strive -->
 <!-- Contacts -->
-@Html.Partial("~/Views/Shared/Index/Contacts.cshtml")
+@Html.Partial("~/Views/Shared/Index/Contacts.cshtml", Model)
 <!-- /Contacts -->
 
 @section Scripts {

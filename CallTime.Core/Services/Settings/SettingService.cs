@@ -1,6 +1,10 @@
-﻿using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Data.Entity;
 using CallTime.Core.Enums;
 using CallTime.Core.Interfaces;
+using CallTime.Core.Models.Content;
 using CallTime.Core.Models.Responses;
 using CallTime.Core.Models.Setting;
 using CallTime.Data;
@@ -16,6 +20,35 @@ namespace CallTime.Core.Services.Settings
         public SettingModel GetSettingModel()
         {
             return CurrentSettings.Data;
+        }
+
+        /// <summary>
+        /// Получить контент
+        /// </summary>
+        /// <param name="lang"></param>
+        /// <returns></returns>
+        public List<ContentModel> GetContent(EnumLanguage lang)
+        {
+            try
+            {
+                using (var db = new DataContext())
+                {
+                    var contentList = new List<ContentModel>();
+                    foreach (EnumContentKey key in Enum.GetValues(typeof(EnumContentKey)))
+                    {
+                        var model = new ContentModel();
+                        model.Key = key;
+                        model.Content = db.PageContentLangs.AsNoTracking()
+                            .FirstOrDefault(x => x.PageContentId == (int) key && x.Lang == (int)lang)?.Content;
+                        contentList.Add(model);
+                    }
+                    return contentList;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new List<ContentModel>();
+            }
         }
 
         /// <summary>

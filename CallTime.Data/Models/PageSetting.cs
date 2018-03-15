@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CallTime.Data.Models
 {
@@ -12,6 +13,7 @@ namespace CallTime.Data.Models
         /// <summary>
         /// Ид страницы
         /// </summary>
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
         /// <summary>
         /// Название

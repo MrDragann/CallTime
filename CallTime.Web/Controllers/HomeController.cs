@@ -6,6 +6,7 @@ using System.Web;
 using System.Net;
 using System.Web.Mvc;
 using CallTime.Core.Interfaces;
+using CallTime.Core.Services.Settings;
 using CallTime.Core.Services.Statistic;
 
 namespace CallTime.Web.Controllers
@@ -13,6 +14,7 @@ namespace CallTime.Web.Controllers
     public class HomeController : BaseController
     {
         private IStatisticService _statisticService = new StatisticService();
+        private ISettingService _settingService = new SettingService();
         private string GetIpAddress()
         {
             string stringIpAddress;
@@ -25,7 +27,7 @@ namespace CallTime.Web.Controllers
         }
         public ActionResult Index()
         {
-      
+            var model = new ViewModel {PageContents = _settingService.GetContent(Lang)};
             if (HttpContext.Request.Cookies["Visit"] == null)
             {
                 var address = GetIpAddress();
@@ -39,7 +41,7 @@ namespace CallTime.Web.Controllers
                     Response.Cookies.Add(myCookie);
                 }
             }
-            return View();
+            return View(model);
         }
         public ActionResult Token()
         {

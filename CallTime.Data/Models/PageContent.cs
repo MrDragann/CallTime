@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CallTime.Data.Models
 {
@@ -10,13 +11,14 @@ namespace CallTime.Data.Models
         #region [ Свойства ]
 
         /// <summary>
-        /// Ид страницы
+        /// Ид контента
         /// </summary>
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
         /// <summary>
         /// Название
         /// </summary>
-        public string PageName { get; set; }
+        public string ContentName { get; set; }
 
         #endregion
 
