@@ -985,17 +985,33 @@ input[type="tel"] {
 *****************************************************/
 #stages-project {
     background-color: #F7F7F7;
-    min-height: 603px;
+    min-height: 698px;
     display: flex;
     justify-content: center;
+    padding: 60px 0;
+    position: relative;
+    
 }
-
+    #stages-project:after {
+        content: "2018";
+        text-align: center;
+        top: -35px;
+        /* left: 0; */
+        color: #BEBEBE;
+        font-size: 503px;
+        font-family: ROBOTOSLAB-REGULAR;
+        position: absolute;
+        opacity: 0.15;
+        z-index: 2;
+    }
 .stage-container {
+
     width: 80%;
     text-align: center;
 }
 
 .background-year {
+
     color: #BEBEBE;
     font-size: 503px;
     font-family: ROBOTOSLAB-REGULAR;
@@ -1222,14 +1238,43 @@ Responsive Styles
     .stage-container {
         width: 95%;
     }
+    .arrow {
+        width: 97% !important;
+    }
+        .arrow.small {
+            width: 50% !important;
+        }
 }
 
 @media only screen and (max-width: 1400px) {
     .stage-container {
         width: 100%;
     }
+    .arrow {
+        width: 94% !important;
+    }
+        .arrow.small {
+            width: 50% !important;
+        }
 }
+@media only screen and (max-width: 1262px) {
+    .arrow {     
+        margin: -11px auto !important;
+    }
 
+        .arrow.small {
+            margin: 10px auto !important;
+        }
+}
+@media only screen and (max-width: 857px) {
+    .arrow {
+        margin: -70px auto !important;
+    }
+
+        .arrow.small {
+            margin: 50px auto !important;
+        }
+}
 
 
 

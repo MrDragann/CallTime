@@ -59,7 +59,10 @@ namespace CallTime.Web.Controllers
             }
             return View();
         }
-
+        public ActionResult PersonalCabinet()
+        {
+            return View();
+        }
         public ActionResult Subscribe(string email)
         {
             var message = ModelEmailFeedBack.GetHtmlTextSubscribe(email);

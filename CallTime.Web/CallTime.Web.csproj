@@ -155,7 +155,7 @@
     <Compile Include="Infrastructure\AuthorizeViewPage.cs" />
     <Compile Include="Infrastructure\ConstRoles.cs" />
     <Compile Include="Infrastructure\WebUser.cs" />
-	 <Compile Include="Models\Emailer.cs" />
+    <Compile Include="Models\Emailer.cs" />
     <Compile Include="Models\ModelEmailFeedBack.cs" />
     <Compile Include="Models\ModelFeedback.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -179,12 +179,14 @@
     <Content Include="asserts\img\dust_scratches.png" />
     <Content Include="asserts\img\employes.png" />
     <Content Include="asserts\img\logo call time.svg" />
+    <Content Include="asserts\img\logo ctt.svg" />
     <Content Include="asserts\img\man about.png" />
     <Content Include="asserts\img\pattern ctt.png" />
     <Content Include="asserts\img\pattern-call-time.png" />
     <Content Include="asserts\img\map.PNG" />
     <Content Include="asserts\js\animate.js" />
     <Content Include="asserts\js\bootstrap.min.js" />
+    <Content Include="asserts\js\cabinet.js" />
     <Content Include="asserts\js\jquery-2.1.4.min.js" />
     <Content Include="asserts\js\jquery.magnific-popup.min.js" />
     <Content Include="asserts\js\main.js" />
@@ -272,11 +274,11 @@
     <Content Include="Views\Shared\Token\Subscribe.cshtml" />
     <Content Include="Views\Shared\Token\Layout\_Layout.cshtml" />
     <Content Include="Views\Shared\Token\Layout\_Header.cshtml" />
+    <Content Include="Views\Home\PersonalCabinet.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
