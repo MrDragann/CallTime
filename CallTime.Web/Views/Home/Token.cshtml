@@ -1,26 +1,32 @@
-﻿@{ 
+﻿@model CallTime.Web.Models.ViewModel
+@{
     Layout = "~/Views/Shared/Token/Layout/_Layout.cshtml";
 }
 <!-- SolveProblems -->
-@Html.Partial("~/Views/Shared/Token/SolveProblems.cshtml")
+@Html.Partial("~/Views/Shared/Token/SolveProblems.cshtml", Model)
 <!-- /SolveProblems -->
-
 <!-- Problems -->
-@Html.Partial("~/Views/Shared/Token/Problems.cshtml")
+@Html.Partial("~/Views/Shared/Token/Problems.cshtml", Model)
 <!-- /Problems -->
-
 <!-- About -->
-@Html.Partial("~/Views/Shared/Token/About.cshtml")
+@Html.Partial("~/Views/Shared/Token/About.cshtml", Model)
 <!-- /About -->
-
 <!-- OurOffers -->
-@Html.Partial("~/Views/Shared/Token/OurOffers.cshtml")
+@Html.Partial("~/Views/Shared/Token/OurOffers.cshtml", Model)
 <!-- /OurOffers -->
-
 <!-- StagesProject -->
-@Html.Partial("~/Views/Shared/Token/StagesProject.cshtml")
+@Html.Partial("~/Views/Shared/Token/StagesProject.cshtml", Model)
 <!-- /StagesProject -->
-
 <!-- Subscribe -->
-@Html.Partial("~/Views/Shared/Token/Subscribe.cshtml")
+@Html.Partial("~/Views/Shared/Token/Subscribe.cshtml", Model)
 <!-- /Subscribe -->
+
+@section Scripts {
+    <script src="~/Areas/Admin/assets/global/plugins/ckeditor_full2/ckeditor.js"></script>
+    <script>
+        $(function() {
+            CKEDITOR.disableAutoInline = true;
+            CKEDITOR.inlineAll();
+        });
+    </script>
+}

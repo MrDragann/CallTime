@@ -1,12 +1,12 @@
 ﻿@model CallTime.Web.Models.ViewModel
 <!-- Header -->
-@Html.Partial("~/Views/Shared/Index/Header.cshtml",Model)
+@Html.Partial("~/Views/Shared/Index/Header.cshtml", Model)
 <!-- /Header -->
 <!-- Services -->
-@Html.Partial("~/Views/Shared/Index/Services.cshtml",Model)
+@Html.Partial("~/Views/Shared/Index/Services.cshtml", Model)
 <!-- /Services -->
 <!-- BecomePartner -->
-@Html.Partial("~/Views/Shared/Index/BecomePartner.cshtml",Model)
+@Html.Partial("~/Views/Shared/Index/BecomePartner.cshtml", Model)
 <!-- /BecomePartner -->
 <!-- FactsFigures -->
 @Html.Partial("~/Views/Shared/Index/FactsFigures.cshtml", Model)
@@ -22,6 +22,13 @@
 <!-- /Contacts -->
 
 @section Scripts {
+    <script src="~/Areas/Admin/assets/global/plugins/ckeditor_full2/ckeditor.js"></script>
+    <script>
+        $(function () {
+            CKEDITOR.disableAutoInline = true;
+            CKEDITOR.inlineAll();
+        });
+    </script>
     <script>
         function number5Animate() {
             var number = 1;
@@ -92,7 +99,7 @@
             var myLatLng = { lat: 46.842587, lng: 29.663346 };
             var myLatLng2 = { lat: 46.825538, lng: 29.474121 };
             $("#onMap").click(function () {
-                onMap();             
+                onMap();
             })
             $("#on-form").click(function () {
                 onForm();
@@ -112,7 +119,7 @@
                     map: map,
                     title: 'Бендерский офис'
                 });
-                onMap();        
+                onMap();
             });
             $("#Bender").click(function () {
                 var map = new google.maps.Map(document.getElementById('map'), {
@@ -129,7 +136,7 @@
                     map: map,
                     title: 'Бендерский офис'
                 });
-                onMap();        
+                onMap();
             });
         });
     </script>

@@ -234,4 +234,7 @@
   <data name="SubscribeAndWeNotifyYou" xml:space="preserve">
     <value>Subscribe and we will notify you about the development of our project</value>
   </data>
+  <data name="Subscription" xml:space="preserve">
+    <value>Subscription</value>
+  </data>
 </root>

@@ -1,18 +1,18 @@
 ﻿<section id="solve-problems">
     <div class="container flex-column">
         <div class="title-header">
-            Решаем проблемы
-            
-            <p>с <span  class="typed"></span></p>
+            @ContentHelper.GetContent(Model.PageContents, EnumContentKey.SolveProblemsTitle)
+
+            <p>с <span class="typed"></span></p>
         </div>
         <span  id="description-text"></span>
         <div class="desicription-header" id="desicription-header">
-            Блокчейн и криптовалюты стали неотъемлемой частью современного общества, но большинство населения мало осведомлены о деталях … @*подпишись и мы осведомим, мать твою ).*@
-           
+            @ContentHelper.GetContent(Model.PageContents, EnumContentKey.SolveProblemsText)
+
         </div>
         <div>
             <a href="#subscribe">
-                <button class="btn btn-orange">ПОДПИСКА</button>
+                <button class="btn btn-orange upper">@Resource.Subscription</button>
             </a>
         </div>
         <div class="list-social">
@@ -20,7 +20,7 @@
             <div> <a href="https://twitter.com/call_token" class=" animated-button victoria-two">Twitter</a> </div>
             <div> <a href="#" class="animated-button victoria-four">Instagram</a> </div>
         </div>
-        <div >
+        <div>
             
         </div>
      

@@ -5,8 +5,10 @@
     <div class="stage-container">
 
         <div align="center" class="title-section">
-            <h1>Этапы развития проекта</h1>
-            <span>Дорожная карта</span>
+            @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProjectStagesTitle)
+            <span>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProjectStagesSubTitle)
+            </span>
         </div>
         <div class="flex-stage">
             <div>

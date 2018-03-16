@@ -1,8 +1,10 @@
 ﻿<section id="our-offers">
     <div class="container">
         <div align="center" class="title-section">
-            <h1>Наше предложение биржам</h1>
-            <span>Наш вклад в развития бирж на кривтовалютном рынке</span>
+            @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersTitle)
+            <span>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersSubTitle)
+            </span>
         </div>
         <div>
             <div class="col-md-6">
@@ -16,7 +18,7 @@
                         <span class="orange-box"></span>
                     </div>
                     <div>
-                        <p> Разгрузим работу персонала решая элементарные однотипные проблемы </p>
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersText1)
                     </div>
                 </div>
                 <div class="wow flipInX" data-wow-delay="0.3s">
@@ -24,7 +26,7 @@
                         <span class="orange-box"></span>
                     </div>
                     <div>
-                        <p> Поможем привлечь большее количество пользователей благодаря быстрому и качественному обслуживанию </p>
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersText2)
                     </div>
                 </div>
                 <div class="wow flipInX" data-wow-delay="0.6s">
@@ -32,9 +34,7 @@
                         <span class="orange-box"></span>
                     </div>
                     <div>
-                        <p>
-                            Повысим уровень доверия пользователей к бирже и криптовалютам 
-                        </p>
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersText3)
                     </div>
                 </div>
                 <div class="wow flipInX" data-wow-delay="0.9s">
@@ -42,11 +42,7 @@
                         <span class="orange-box"></span>
                     </div>
                     <div>
-                        <p>
-                            Проведем консультацию новым пользователям бирж.
-                            <br />
-                            Первая консультация бесплатно
-                        </p>
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersText4)
                     </div>
                 </div>
                 <div  class="wow flipInX" data-wow-delay="1.2s">
@@ -54,7 +50,7 @@
                         <span class="orange-box"></span>
                     </div>
                     <div>
-                        <p>Повысим интерес новых пользователей в работе с вашей биржей</p>
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.OurOffersText5)
                     </div>
                 </div>
                

@@ -2,25 +2,25 @@
     <div class="container">
         <div class="title-section white">
             <h1>@Resource.StriveTo</h1>
-            <span>Мы дорожим своей репутацией, поэтому всегда предоставляем свои услуги на высшем уровне, чтобы клиенты ниочём не беспокоились.</span>
+            @ContentHelper.GetContent(Model.PageContents, EnumContentKey.StriveSubTitle)
         </div>
 
         <div   class="flex-strev">
             <div class="wow flipInY" data-wow-delay="0.1s">
                 <span class="orange-line"></span>
-                <span class="white">Создавать</span> необходимую основу для успешного бизнеса наших клиентов
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.StriveText1)
             </div>
-            <div class="wow flipInX"  data-wow-delay="0.5s">
+            <div class="wow flipInX" data-wow-delay="0.5s">
                 <span class="orange-line"></span>
-                <span class="white">Соответствовать</span> статусу высокопрофессиональной компании
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.StriveText2)
             </div>
-            <div class="wow flipInY"  data-wow-delay="0.9s">
+            <div class="wow flipInY" data-wow-delay="0.9s">
                 <span class="orange-line"></span>
-                <span class="white">Совершенствовать</span> технологии приема и обработки телефонных звонков
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.StriveText3)
             </div>
-            <div class="wow flipInX"  data-wow-delay="1.4s">
+            <div class="wow flipInX" data-wow-delay="1.4s">
                 <span class="orange-line"></span>
-                <span class="white">Расширять</span> пределы своих возможностей при этом оставаться лидерами
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.StriveText4)
             </div>
         </div>
     </div>

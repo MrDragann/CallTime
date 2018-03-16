@@ -367,6 +367,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Подписка.
+        /// </summary>
+        public static string Subscription {
+            get {
+                return ResourceManager.GetString("Subscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Тирасполь, Одесская 86\1.
         /// </summary>
         public static string TiraspolOdessa {

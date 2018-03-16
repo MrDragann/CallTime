@@ -6,8 +6,30 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-fw">
                 <li>
-                    <a href="@Url.Action("Index","Settings")">
+                    <a href="@Url.Action("Index","Setting",new{page=EnumSitePage.Home})">
                         Настройки
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="@Url.Action("Index","Home",new{Area="",edit="edit"})">
+                        Редактирование контента
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown dropdown-fw dropdown-fw-disabled">
+            <a href="javascript:;" class="text-uppercase">
+                <i class="icon-home"></i> Токен
+            </a>
+            <ul class="dropdown-menu dropdown-menu-fw">
+                <li>
+                    <a href="@Url.Action("Index","Setting",new{page=EnumSitePage.Token})">
+                        Настройки
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="@Url.Action("Token","Home",new{Area="",edit="edit"})">
+                        Редактирование контента
                     </a>
                 </li>
             </ul>

@@ -8,6 +8,7 @@ using CallTime.Core.Models.Content;
 using CallTime.Core.Models.Responses;
 using CallTime.Core.Models.Setting;
 using CallTime.Data;
+using CallTime.Data.Models;
 
 namespace CallTime.Core.Services.Settings
 {
@@ -17,9 +18,31 @@ namespace CallTime.Core.Services.Settings
         /// Получить модель настройки
         /// </summary>
         /// <returns></returns>
-        public SettingModel GetSettingModel()
+        public SettingModel GetSettingModel(EnumSitePage page)
         {
-            return CurrentSettings.Data;
+            try
+            {
+                using (var db = new DataContext())
+                {
+                    var model = new SettingModel();
+                    model.SitePageId = (int)page;
+                    var ruSetting = db.PageSettingLangs.AsNoTracking()
+                        .FirstOrDefault(x => x.PageSettingId == (int) page && x.Lang==(int)EnumLanguage.Ru);
+                    model.RuTitle = ruSetting?.Title;
+                    model.RuKeywords = ruSetting?.Keywords;
+                    model.RuDescription = ruSetting?.Description;
+                    var enSetting = db.PageSettingLangs.AsNoTracking()
+                        .FirstOrDefault(x => x.PageSettingId == (int)page && x.Lang == (int)EnumLanguage.En);
+                    model.EnTitle = enSetting?.Title;
+                    model.EnKeywords = enSetting?.Keywords;
+                    model.EnDescription = enSetting?.Description;
+                    return model;
+                }
+            }
+            catch (Exception ex)
+            {
+                return new SettingModel();
+            }
         }
 
         /// <summary>
@@ -52,45 +75,74 @@ namespace CallTime.Core.Services.Settings
         }
 
         /// <summary>
+        /// Редактирование контента
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="id"></param>
+        /// <param name="lang"></param>
+        /// <returns></returns>
+        public BaseResponse EditContent(string content, string id, EnumLanguage lang)
+        {
+            try
+            {
+                var keyString = id.Split('-')[1];
+                if (!string.IsNullOrEmpty(keyString))
+                {
+                    var key = int.Parse(keyString);
+                    using (var db = new DataContext())
+                    {
+                        var setting = db.PageContentLangs.FirstOrDefault(x => x.PageContentId == key && x.Lang == (int) lang);
+                        if (setting != null)
+                        {
+                            setting.Content = content;
+                            //for (int i = 17; i < 300; i++)
+                            //{
+                            //    var pageContent = new PageContent {Id = i};
+                            //    db.PageContents.Add(pageContent);
+                            //    var contentRu = new PageContentLang{PageContentId = i,Lang = 1};
+                            //    db.PageContentLangs.Add(contentRu);
+                            //    var contentEn = new PageContentLang{PageContentId = i,Lang = 2};
+                            //    db.PageContentLangs.Add(contentEn);
+                            //}
+                            db.SaveChanges();
+                            return new BaseResponse(EnumResponseStatus.Success, "Контент успешно изменен");
+                        }
+                    }
+                }
+                return new BaseResponse(EnumResponseStatus.Error);
+            }
+            catch (Exception ex)
+            {
+                return new BaseResponse(EnumResponseStatus.Exception);
+            }
+        }
+
+        /// <summary>
         /// Обновление настроек
         /// </summary>
         /// <param name="model"></param>
         /// <returns></returns>
-     //   public BaseResponse UpdateSettings(SettingModel model)
-     //   {
-     //       using (var db = new DataContext())
-     //       {
-     //           var ruTitle = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.RuTitle);
-     //           var enTitle = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.EnTitle);
-     //           var ruDescription = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.RuDescription);
-     //           var enDescription = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.EnDescription);
-     //           var ruKeywords = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.RuKeywords);
-     //           var enKeywords = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.EnKeywords);
-     //           var ruAddress = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.RuAddress);
-     //           var enAddress = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.EnAddress);
-     //           var phone = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.Phone);
-     //           var email = db.Settings.FirstOrDefault(x => x.Key == (int)EnumSettingKey.Email);
-     //           if (ruTitle == null || enTitle == null || ruDescription == null || enDescription == null ||
-     //           ruKeywords == null || enKeywords == null || ruAddress == null || enAddress == null ||
-     //                   phone == null || email == null)
-					//return new BaseResponse(EnumResponseStatus.Error);
+        public BaseResponse UpdateSettings(SettingModel model)
+        {
+            using (var db = new DataContext())
+            {
+                var ruSetting = db.PageSettingLangs.FirstOrDefault(x =>
+                    x.PageSettingId == model.SitePageId && x.Lang == (int)EnumLanguage.Ru);
+                var enSetting = db.PageSettingLangs.FirstOrDefault(x =>
+                    x.PageSettingId == model.SitePageId && x.Lang == (int)EnumLanguage.En);
+                if(ruSetting==null || enSetting==null)
+                    return new BaseResponse(EnumResponseStatus.Error);
 
-     //           ruTitle.Value = model.RuTitle;
-     //           enTitle.Value = model.EnTitle;
-     //           ruDescription.Value = model.RuDescription;
-     //           enDescription.Value = model.EnDescription;
-     //           ruKeywords.Value = model.RuKeywords;
-     //           enKeywords.Value = model.EnKeywords;
-     //           ruAddress.Value = model.RuAddress;
-     //           enAddress.Value = model.EnAddress;
-     //           phone.Value = model.Phone;
-     //           email.Value = model.Email;
-
-     //           db.SaveChanges();
-     //           CurrentSettings.Init();
-     //           return new BaseResponse(0, "Настройки успешно изменены");
-     //       }
-     //   }
+                ruSetting.Title = model.RuTitle;
+                ruSetting.Keywords = model.RuKeywords;
+                ruSetting.Description = model.RuDescription;
+                enSetting.Title = model.EnTitle;
+                enSetting.Keywords = model.EnKeywords;
+                enSetting.Description = model.EnDescription;
+                db.SaveChanges();
+                return new BaseResponse(0, "Настройки успешно изменены");
+            }
+        }
 
     }
 }

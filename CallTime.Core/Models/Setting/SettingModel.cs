@@ -2,6 +2,8 @@
 {
     public class SettingModel
     {
+        public int SitePageId { get; set; }
+
         public string RuTitle { get; set; }
 
         public string RuKeywords { get; set; }
@@ -13,13 +15,5 @@
         public string EnKeywords { get; set; }
 
         public string EnDescription { get; set; }
-
-        public string Phone { get; set; }
-
-        public string Email { get; set; }
-
-        public string RuAddress { get; set; }
-
-        public string EnAddress { get; set; }
     }
 }

@@ -518,12 +518,16 @@ input[type="tel"] {
         left: 5px;
     }
 
-    #facts-figurese .description {
+    #facts-figurese .description, #facts-figurese .description p {
         font-size: 20px;
         font-family: Roboto-Bold;
         color: #383838;
         display: block;
     }
+
+#facts-figurese .description div {
+    margin: 0;
+}
 
 .flex-facts {
     display: flex;
@@ -597,21 +601,27 @@ input[type="tel"] {
             margin-bottom: 20px;
         }
 
-        #strive .title-section span {
+        #strive .title-section span, #strive .title-section p {
             font-size: 16px;
             font-family: Roboto-Bold;
         }
 
-.flex-strev {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: #BEBEBE;
-    font-size: 16px;
-    font-family: Roboto-Regular;
-}
+    #strive .flex-strev p {
+        color: #BEBEBE;
+        font-size: 16px;
+        font-family: Roboto-Regular;
+    }
 
-    .flex-strev div {
+    .flex-strev {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #BEBEBE;
+        font-size: 16px;
+        font-family: Roboto-Regular;
+    }
+
+    .flex-strev div.wow {
         margin-right: 30px;
     }
 
@@ -828,7 +838,7 @@ input[type="tel"] {
             text-decoration-color: #FF8035;
         }
 
-    #solve-problems .desicription-header {
+    #solve-problems .desicription-header, #solve-problems .desicription-header div p {
         font-size: 16px;
         color: #272727;
         font-family: Roboto-Regular;
@@ -861,12 +871,12 @@ input[type="tel"] {
     justify-content: space-between;
 }
 
-    .list-problems div {
+    .list-problems div.magictime {
         margin: 0 47px 20px 0;
         flex-basis: calc(50% - 100px);
     }
 
-    .list-problems span.title {
+    .list-problems span.title, .list-problems span.title p {
         color: #383838;
         font-family: Roboto-Medium;
         font-size: 22px;

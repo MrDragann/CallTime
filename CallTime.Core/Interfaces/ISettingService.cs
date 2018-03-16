@@ -15,18 +15,27 @@ namespace CallTime.Core.Interfaces
         /// <returns></returns>
         List<ContentModel> GetContent(EnumLanguage lang);
 
-        ///// <summary>
-        ///// Получить модель настройки
-        ///// </summary>
-        ///// <returns></returns>
-        //SettingModel GetSettingModel();
+        /// <summary>
+        /// Редактирование контента
+        /// </summary>
+        /// <param name="content"></param>
+        /// <param name="id"></param>
+        /// <param name="lang"></param>
+        /// <returns></returns>
+        BaseResponse EditContent(string content, string id, EnumLanguage lang);
 
-        ///// <summary>
-        ///// Обновление настроек
-        ///// </summary>
-        ///// <param name="model"></param>
-        ///// <returns></returns>
-        //BaseResponse UpdateSettings(SettingModel model);
+        /// <summary>
+        /// Получить модель настройки
+        /// </summary>
+        /// <returns></returns>
+        SettingModel GetSettingModel(EnumSitePage page);
+
+        /// <summary>
+        /// Обновление настроек
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        BaseResponse UpdateSettings(SettingModel model);
 
     }
 }

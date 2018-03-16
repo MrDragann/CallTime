@@ -14,17 +14,33 @@ namespace CallTime.Web
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
+                name: "DefaultLangEdit",
+                url: "{lang}/{edit}/{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                constraints: new { lang = @"ru|en", edit = @"edit" },
+                namespaces: new[] { "CallTime.Web.Controllers" }
+            );
+
+            routes.MapRoute(
                 name: "DefaultLang",
                 url: "{lang}/{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, edit = "" },
                 constraints: new { lang = @"ru|en" },
+                namespaces: new[] { "CallTime.Web.Controllers" }
+            );
+
+            routes.MapRoute(
+                name: "DefaultEdit",
+                url: "{edit}/{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, lang = "ru" },
+                constraints: new { edit = @"edit" },
                 namespaces: new[] { "CallTime.Web.Controllers" }
             );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, lang = "ru" },
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional, lang = "ru", edit ="" },
                 namespaces: new[] { "CallTime.Web.Controllers" }
             );
         }

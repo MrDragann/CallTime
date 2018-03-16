@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using CallTime.Core.Enums;
 using CallTime.Core.Interfaces;
 using CallTime.Core.Models.Requests;
 using CallTime.Core.Models.User;
@@ -21,13 +22,13 @@ namespace CallTime.Web.Areas.Admin.Controllers
         {
             //var reg = _authCommonService.Register(new UserModel
             //{
-            //    Email = "vs-admin",
-            //    Login = "vs-admin",
-            //    Password = "3yZdomzEEn7B"
+            //    Email = "ct-admin",
+            //    Login = "ct-admin",
+            //    Password = "3yZfurzEEn7B".GetHashString()
             //});
             var user = new WebUser();
             if (user.IsAdmin)
-                return RedirectToAction("Index", "Settings");
+                return RedirectToAction("Index", "Setting", new { page = EnumSitePage.Home });
 
             return View(new UserLoginModel());
         }

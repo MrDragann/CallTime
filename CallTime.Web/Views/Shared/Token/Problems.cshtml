@@ -3,48 +3,37 @@
 
         <div class="title-section">
             <h1>@Resource.Problems</h1>
-            <span>Описание проблем пользователей и их решения нами</span>
+            <span>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsSubTitle)
+            </span>
         </div>
         <div class="list-problems">
             <div id="first-problem">
                 <span class="title">
-                    Ввод и вывод денег
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB1Title)
                 </span>
-                <p>
-        
-                    Поможем быстро, безопасно и выгодно ввести и вывести ваши деньги на биржу. Расскажем о возможных вариантах
-                    их преимуществах и недостатках и поможем выбрать оптимальное решение.
-                </p>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB1Text)
             </div>
             <div id="third-problem">
-              
+
                 <span class="title">
-                    Долгое время ожидания рассмотрения тикета
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB2Title)
                 </span>
-                <p>
-                    Мы оперативно объясним и поможем пользователям правильно 
-                    оформить тикет (включить всю необходимую информацию) и проинформируем о текущих проблемах биржи и предполагаемых сроках ее решения
-                </p>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB2Text)
             </div>
             <div id="second-problem">
                 <span class="orange-line-bold"></span>
                 <span class="title">
-                    Блокировка учетной записи
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB3Title)
                 </span>
-                <p>
-                    Из-за увеличившегося количества взломов учетных записей и кражи 
-                    средств мы поможем в кратчайшие сроки заблокировать учетную запись пользователя до выяснения обстоятельств сотрудниками биржи.
-                </p>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB3Text)
             </div>
             <div id="fourth-problem">
                 <span class="orange-line-bold"></span>
                 <span class="title">
-                    Отсутствие консультаций в работе с биржой
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB4Title)
                 </span>
-                <p>
-                    Проведем бесплатную первоначальную консультацию по работе с биржей для только что зарегистрировавшихся пользователей. 
-                    Расскажем основные возможности и базовые стратегии торговли.
-                </p>
+                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB4Text)
             </div>
         </div>
     </div>

@@ -18,27 +18,23 @@ namespace CallTime.Web.Controllers
 
         private string CurrentLangCode { get; set; }
 
-        public EnumLanguage Lang { get; set; }
+        public static EnumLanguage Lang { get; set; }
 
-        public void SetSitePageSettings(EnumLanguage lang)
+        public void SetSitePageSettings(EnumLanguage lang, EnumSitePage page)
         {
-            var model = new SettingModel();//_settingService.GetSettingModel();
+            var model = _settingService.GetSettingModel(page);
             if (lang == EnumLanguage.Ru)
             {
                 ViewBag.Title = model.RuTitle;
                 ViewBag.Keywords = model.RuKeywords;
                 ViewBag.Description = model.RuDescription;
-                ViewBag.Address = model.RuAddress;
             }
             else if (lang == EnumLanguage.En)
             {
                 ViewBag.Title = model.EnTitle;
                 ViewBag.Keywords = model.EnKeywords;
                 ViewBag.Description = model.EnDescription;
-                ViewBag.Address = model.EnAddress;
             }
-            ViewBag.Phone = model.Phone;
-            ViewBag.Email = model.Email;
         }
         
         protected override void Initialize(RequestContext requestContext)

@@ -144,12 +144,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
-    <Compile Include="Areas\Admin\Controllers\SettingsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\SettingController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\ContentHelper.cs" />
     <Compile Include="Helpers\LangHelper.cs" />
     <Compile Include="Infrastructure\AuthorizationAttribute.cs" />
     <Compile Include="Infrastructure\AuthorizeViewPage.cs" />
@@ -226,7 +227,7 @@
     <Content Include="fonts\IcoMoon-Free.ttf" />
     <Content Include="asserts\js\jquery-inview.js" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Settings\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Setting\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\Partial\FooterPartial.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\Partial\HeaderPartial.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\Partial\LeftSideBar.cshtml" />
@@ -280,6 +281,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\assets\admin\" />
     <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
   <ItemGroup>

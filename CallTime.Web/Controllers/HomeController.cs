@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Net;
 using System.Web.Mvc;
+using CallTime.Core.Enums;
 using CallTime.Core.Interfaces;
 using CallTime.Core.Services.Settings;
 using CallTime.Core.Services.Statistic;
@@ -27,6 +28,7 @@ namespace CallTime.Web.Controllers
         }
         public ActionResult Index()
         {
+            SetSitePageSettings(Lang,EnumSitePage.Home);
             var model = new ViewModel {PageContents = _settingService.GetContent(Lang)};
             if (HttpContext.Request.Cookies["Visit"] == null)
             {
@@ -45,7 +47,9 @@ namespace CallTime.Web.Controllers
         }
         public ActionResult Token()
         {
-           
+            SetSitePageSettings(Lang,EnumSitePage.Token);
+            var model = new ViewModel { PageContents = _settingService.GetContent(Lang)};
+
             if (HttpContext.Request.Cookies["VisitToken"] == null)
             {
                 var address = GetIpAddress();
@@ -59,7 +63,7 @@ namespace CallTime.Web.Controllers
                     Response.Cookies.Add(myCookie);
                 }
             }
-            return View();
+            return View(model);
         }
         public ActionResult PersonalCabinet()
         {
@@ -78,6 +82,14 @@ namespace CallTime.Web.Controllers
             model.Text = ModelEmailFeedBack.GetHtmlText(model);
             Emailer.Send(model.Text, model.Subject, "feedback@call-time.ru");
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        [ValidateInput(false)]
+        public ActionResult EditContent(string editabledata, string editorID)
+        {
+            var respone = _settingService.EditContent(editabledata, editorID, Lang);
+            return Json(respone);
         }
     }
 }
