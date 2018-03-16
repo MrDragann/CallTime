@@ -23,7 +23,7 @@ namespace CallTime.Web.Helpers
             var user = new WebUser();
             if (routeValueDictionary.ContainsKey("edit"))
             {
-                if (routeData.Values["edit"] as string == "edit" && user.IsAdmin)
+                if (routeData.Values["edit"] as string == "edit")// && user.IsAdmin)
                 {
                     div.AddCssClass("ckeditor");
                     div.Attributes.Add("contenteditable", "true");
