@@ -98,6 +98,7 @@
 
             var myLatLng = { lat: 46.842587, lng: 29.663346 };
             var myLatLng2 = { lat: 46.825538, lng: 29.474121 };
+            var dnevst = { lat: 46.620434, lng: 29.917776 };
             $("#onMap").click(function () {
                 onMap();
             })
@@ -119,6 +120,11 @@
                     map: map,
                     title: 'Бендерский офис'
                 });
+                var marker3 = new google.maps.Marker({
+                    position: dnevst,
+                    map: map,
+                    title: 'Дневстровский офис'
+                });
                 onMap();
             });
             $("#Bender").click(function () {
@@ -135,6 +141,33 @@
                     position: myLatLng2,
                     map: map,
                     title: 'Бендерский офис'
+                });
+                var marker3 = new google.maps.Marker({
+                    position: dnevst,
+                    map: map,
+                    title: 'Дневстровский офис'
+                });
+                onMap();
+            });
+            $("#Dnevstrovsk").click(function () {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: dnevst
+                });
+                var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Тираспольский офис'
+                });
+                var marker2 = new google.maps.Marker({
+                    position: myLatLng2,
+                    map: map,
+                    title: 'Бендерский офис'
+                });
+                var marker3 = new google.maps.Marker({
+                    position: dnevst,
+                    map: map,
+                    title: 'Дневстровский офис'
                 });
                 onMap();
             });

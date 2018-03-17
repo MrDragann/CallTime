@@ -80,7 +80,7 @@ namespace CallTime.Web.Controllers
         {
             model.Subject = "Обратная связь";
             model.Text = ModelEmailFeedBack.GetHtmlText(model);
-            Emailer.Send(model.Text, model.Subject, "feedback@call-time.ru");
+            Emailer.Send(model.Text, model.Subject, "sss8474@gmail.com");
             return RedirectToAction("Index");
         }
 

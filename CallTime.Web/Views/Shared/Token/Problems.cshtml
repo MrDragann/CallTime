@@ -1,41 +1,43 @@
 ﻿<section id="problems">
     <div class="container">
-
         <div class="title-section">
             <h1>@Resource.Problems</h1>
             <span>
                 @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsSubTitle)
             </span>
         </div>
-        <div class="list-problems">
-            <div id="first-problem">
-                <span class="title">
-                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB1Title)
-                </span>
-                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB1Text)
+        <div class="list-problems ">
+            <div class="col-md-6">
+                <div id="first-problem">
+                    <span class="title">
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB1Title)
+                    </span>
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB1Text)
+                </div>
+                <div id="second-problem">
+                    <span class="orange-line-bold"></span>
+                    <span class="title">
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB3Title)
+                    </span>
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB3Text)
+                </div>
             </div>
-            <div id="third-problem">
-
-                <span class="title">
-                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB2Title)
-                </span>
-                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB2Text)
-            </div>
-            <div id="second-problem">
-                <span class="orange-line-bold"></span>
-                <span class="title">
-                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB3Title)
-                </span>
-                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB3Text)
-            </div>
-            <div id="fourth-problem">
-                <span class="orange-line-bold"></span>
-                <span class="title">
-                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB4Title)
-                </span>
-                @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB4Text)
+            <div class="col-md-6">
+                <div id="third-problem">
+                    <span class="title">
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB2Title)
+                    </span>
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB2Text)
+                </div>
+                <div id="fourth-problem">
+                    <span class="orange-line-bold"></span>
+                    <span class="title">
+                        @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB4Title)
+                    </span>
+                    @ContentHelper.GetContent(Model.PageContents, EnumContentKey.ProblemsB4Text)
+                </div>
             </div>
         </div>
+
     </div>
-   
 </section>

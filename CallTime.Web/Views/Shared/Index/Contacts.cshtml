@@ -85,14 +85,14 @@
                     </div>
                     <div class="feedback-form">
                         <div class="item">
-                            <div class="g-recaptcha" data-sitekey="6LeRUEoUAAAAAAD3JMGSIn1zhVZ0KzqmY4R75f2n"></div>
+                            <div class="g-recaptcha"  data-callback="recaptchaCallback" data-sitekey="6LeRUEoUAAAAAAD3JMGSIn1zhVZ0KzqmY4R75f2n"></div>
                         </div>
                         <div>
                             <p>@Resource.YourPersonalDataNotBeTransferred</p>
                         </div>
                     </div>
                     <div class="send">
-                        <button type="submit" class="btn btn-orange btn-large upper">@Resource.Send</button>
+                        <button type="submit" id="form-submit" disabled class="btn btn-orange btn-large upper">@Resource.Send</button>
                     </div>
                 </form>
             </div>
@@ -108,7 +108,10 @@
                     <div class="wow flipInX" id="Bender" data-wow-delay="0.9s">
                         <span class="icon icon-location2"></span>@Resource.BenderLenin
                     </div>
-                    <div class="wow flipInX" data-wow-delay="1.2s">
+                    <div class="wow flipInX" id="Dnevstrovsk" data-wow-delay="1.1s">
+                        <span class="icon icon-location2"></span>Дневстровск, ул. Строителей 
+                    </div>
+                    <div class="wow flipInX" data-wow-delay="1.3s">
                         <span class="icon icon-mail"></span><a href="mailto:info@call-time.ru">info@call-time.ru</a>
                     </div>
                     <div class="wow flipInX" data-wow-delay="1.5s">
@@ -131,3 +134,8 @@
 <script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
 
   
+<script>
+    function recaptchaCallback() {
+        $('#form-submit').removeAttr('disabled');
+    };
+</script>

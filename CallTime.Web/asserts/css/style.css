@@ -427,7 +427,7 @@ input[type="tel"] {
 #header {
     background-image: url('../img/back header call time.png');
     background-repeat: no-repeat;
-    margin-top: 130px;
+    margin-top: 120px;
     background-size: auto 100%;
     height: 1100px;
 }
@@ -775,7 +775,7 @@ input[type="tel"] {
     text-decoration: underline;
     position: relative;
     left: 85%;
-    top: 65px;
+    top: 30px;
 }
 .on-form {
     display: none;
@@ -821,7 +821,7 @@ input[type="tel"] {
 #solve-problems {
     background-image: url('../img/back header ctt.png');
     background-repeat: no-repeat;
-    margin-top: 130px;
+    margin-top: 120px;
     background-size: auto 100%;
     height: 1100px;
 }
@@ -845,10 +845,7 @@ input[type="tel"] {
     }
 
 .list-social {
-    display: flex;
-    width: 30%;
-    flex-direction: row;
-    justify-content: space-between;
+
 }
 
     .list-social a {
@@ -866,9 +863,7 @@ input[type="tel"] {
 }
 
 .list-problems {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+
 }
 
     .list-problems div.magictime {
@@ -1104,14 +1099,11 @@ input[type="tel"] {
 }
 
 .flex-subscribe {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+  
 }
 
     .flex-subscribe div {
-        margin-right: 40px;
+        /*margin-right: 40px;*/
     }
 
     .flex-subscribe p {
@@ -1156,10 +1148,10 @@ Responsive Styles
 
     #main-nav #slide_out_menu {
         position: fixed;
-        display: block;
+        /*display: block;
         width: 300px;
         height: 100%;
-        left: -300px;
+        left: -300px;*/
     }
 
         #main-nav #slide_out_menu .menu-close {

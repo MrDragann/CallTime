@@ -180,6 +180,15 @@
     <Content Include="asserts\img\back header ctt.png" />
     <Content Include="asserts\img\dust_scratches.png" />
     <Content Include="asserts\img\employes.png" />
+    <Content Include="asserts\img\favicon\android-chrome-192x192.png" />
+    <Content Include="asserts\img\favicon\android-chrome-256x256.png" />
+    <Content Include="asserts\img\favicon\apple-touch-icon.png" />
+    <Content Include="asserts\img\favicon\browserconfig.xml" />
+    <Content Include="asserts\img\favicon\favicon-16x16.png" />
+    <Content Include="asserts\img\favicon\favicon-32x32.png" />
+    <Content Include="asserts\img\favicon\favicon.ico" />
+    <Content Include="asserts\img\favicon\mstile-150x150.png" />
+    <Content Include="asserts\img\favicon\safari-pinned-tab.svg" />
     <Content Include="asserts\img\logo call time.svg" />
     <Content Include="asserts\img\logo ctt.svg" />
     <Content Include="asserts\img\man about.png" />
