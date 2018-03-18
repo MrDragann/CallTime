@@ -78,5 +78,9 @@
         OurOffersText5,
         ProjectStagesTitle,
         ProjectStagesSubTitle,
+        MainSlide1,
+        MainSlide2,
+        MainSlide3,
+        MainSlide4,
     }
 }

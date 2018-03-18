@@ -101,7 +101,7 @@
             color: #FF8035 !important;
         }
 
-.desicription-header {
+.desicription-header, .desicription-header p {
     font-size: 18px;
     font-family: Roboto-Regular;
     color: #383838;
