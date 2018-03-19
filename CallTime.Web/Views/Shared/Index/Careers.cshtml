@@ -1,0 +1,85 @@
+﻿
+<style>
+    .white-popup {
+        position: relative;
+        background: transparent;
+        padding: 20px;
+        width: auto;
+        max-width: 500px;
+        margin: 20px auto;
+    }
+</style>
+<!-- Like so: -->
+
+
+
+<div id="Careers" class="white-popup mfp-hide">
+    Анкета соискателя
+    <form action="@Url.Action("Careers","Home")" method="post" class="contact">
+        <fieldset class="contact-inner">
+            <p class="contact-input">
+                <input type="text" name="Name" required placeholder="Ваше имя" autofocus>
+            </p>
+            <p class="contact-input">
+                <input type="email" name="Email" required placeholder="Ваше почта">
+            </p>
+            <p class="contact-input">
+                <input type="tel" name="Phone" required placeholder="Ваше номер телефона">
+            </p>
+            <p class="contact-input">
+                <input type="date" name="Date" required placeholder="Ваше почта">
+            </p>
+            <p class="contact-input">
+                <textarea name="Education" required placeholder="Образование"></textarea>
+            </p>
+            <p class="contact-input">
+                <textarea name="Course" placeholder="Дополнительные курсы, стажировки, тренинги"></textarea>
+            </p>
+            <p class="contact-input">
+                <label for="select" class="select">
+                    <select name="Experience" id="select">
+                        <option value="" selected>Опыт работы в контакт-центре</option>
+                        <option value="нет">нет</option>
+                        <option value="3 месяца">3 месяца</option>
+                        <option value="6 месяцев">6 месяцев</option>
+                        <option value="1 год">1 год</option>
+                        <option value="более 2-ух лет">более 2-ух лет</option>
+                    </select>
+
+                </label>
+            </p>
+            <p class="contact-input">
+                <input type="text" name="ReasonLeave" placeholder="Причина ухода с последнего места работы">
+            </p>
+            <p class="contact-input">
+                <input type="text" name="Salary"  placeholder="Желаемый оклад">
+            </p>
+            <p class="contact-input">
+                <label for="select" class="select">
+                    <select name="SkillPc" id="select">
+                        <option value="" selected>Уровень владения ПК</option>
+                        <option value="пользователь">пользователь</option>
+                        <option value="уверенный пользователь">уверенный пользователь</option>
+                        <option value="продвинутый пользователь">продвинутый пользователь</option>
+                        <option value="профессиональный уровень">профессиональный уровень</option>
+                    </select>
+                </label>
+            </p>
+            <p class="contact-input">
+                <input type="text" name="About" required placeholder="Откуда вы узнали о нас?">
+            </p>
+            <p class="contact-input">
+                <input type="text" name="Positive" required placeholder="Укажите 3 своих положительных качества*">
+            </p>
+            <p class="contact-input">
+                <input type="text" name="Negative" required placeholder="Укажите 3 своих отрицательных качества*">
+            </p>
+            <p class="contact-input">
+                <textarea name="Additionally" placeholder="Дополнительно"></textarea>
+            </p>
+            <p class="contact-submit">
+                <input type="submit" value="Отправить заявку">
+            </p>
+        </fieldset>
+    </form>
+</div>

@@ -79,11 +79,12 @@
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
 }
 
     .flex-column .title-header, .flex-column .desicription-header {
         width: 50%;
+        margin-bottom:40px;
     }
 
 .title-header, #solve-problems .title-header div p {
@@ -125,6 +126,8 @@
     display: flex;
     align-content: flex-start;
     flex-direction: row;
+    position: relative;
+    top: 120px;
 }
 
 .circle-icon {

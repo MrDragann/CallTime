@@ -157,6 +157,7 @@
     <Compile Include="Infrastructure\ConstRoles.cs" />
     <Compile Include="Infrastructure\WebUser.cs" />
     <Compile Include="Models\Emailer.cs" />
+    <Compile Include="Models\ModelCareers.cs" />
     <Compile Include="Models\ModelEmailFeedBack.cs" />
     <Compile Include="Models\ModelFeedback.cs" />
     <Compile Include="Models\ViewModel.cs" />
@@ -170,11 +171,13 @@
     <Content Include="asserts\css\demo.css" />
     <Content Include="asserts\css\magic.css" />
     <Content Include="asserts\css\magnific-popup.css" />
+    <Content Include="asserts\css\magnific.css" />
     <Content Include="asserts\css\main.css" />
     <Content Include="asserts\css\mediaelementplayer.min.css" />
     <Content Include="asserts\css\normalize.css" />
     <Content Include="asserts\css\responsive.css" />
     <Content Include="asserts\css\slick.css" />
+    <Content Include="asserts\css\style-form.css" />
     <Content Include="asserts\css\style.css" />
     <Content Include="asserts\img\back header call time%402x.png" />
     <Content Include="asserts\img\back header call time.png" />
@@ -201,6 +204,7 @@
     <Content Include="asserts\js\cabinet.js" />
     <Content Include="asserts\js\jquery-2.1.4.min.js" />
     <Content Include="asserts\js\jquery.magnific-popup.min.js" />
+    <Content Include="asserts\js\magnitf.js" />
     <Content Include="asserts\js\main.js" />
     <Content Include="asserts\js\slick.js" />
     <Content Include="asserts\js\typed.js" />
@@ -288,6 +292,7 @@
     <Content Include="Views\Shared\Token\Layout\_Layout.cshtml" />
     <Content Include="Views\Shared\Token\Layout\_Header.cshtml" />
     <Content Include="Views\Home\PersonalCabinet.cshtml" />
+    <Content Include="Views\Shared\Index\Careers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

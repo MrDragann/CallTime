@@ -83,7 +83,12 @@ namespace CallTime.Web.Controllers
             Emailer.Send(model.Text, model.Subject, "sss8474@gmail.com");
             return RedirectToAction("Index");
         }
-
+        public ActionResult Careers(ModelCareers model)
+        {
+            
+            Emailer.Send(ModelEmailFeedBack.GetHtmlTextCareers(model), "Новая заявка на сайте CallTime", "maks-bot-5@mail.ru");
+            return RedirectToAction("Index");
+        }
         [HttpPost]
         [ValidateInput(false)]
         public ActionResult EditContent(string editabledata, string editorID)
