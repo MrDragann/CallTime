@@ -287,6 +287,7 @@
     <Content Include="Views\Shared\Token\Layout\_Layout.cshtml" />
     <Content Include="Views\Shared\Token\Layout\_Header.cshtml" />
     <Content Include="Views\Home\PersonalCabinet.cshtml" />
+    <Content Include="Views\Shared\Index\Careers.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -845,7 +845,9 @@ input[type="tel"] {
     }
 
 .list-social {
-
+    position: relative;
+    top: 100px;
+    left: -65px;
 }
 
     .list-social a {
