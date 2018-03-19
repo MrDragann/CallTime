@@ -126,6 +126,8 @@
     display: flex;
     align-content: flex-start;
     flex-direction: row;
+    position: relative;
+    top: 120px;
 }
 
 .circle-icon {

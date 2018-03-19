@@ -20,8 +20,9 @@
 <!-- Contacts -->
 @Html.Partial("~/Views/Shared/Index/Contacts.cshtml", Model)
 <!-- /Contacts -->
-
-
+<!--Careers-->
+@Html.Partial("~/Views/Shared/Index/Careers.cshtml", Model)
+<!-- /Careers -->
 @section Scripts {
     <script src="~/Areas/Admin/assets/global/plugins/ckeditor_full2/ckeditor.js"></script>
     <script>
@@ -172,6 +173,13 @@
                 });
                 onMap();
             });
+        });
+
+    </script>
+    <script>
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
         });
     </script>
 }
