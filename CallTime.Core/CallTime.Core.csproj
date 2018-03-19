@@ -87,6 +87,7 @@
     <Compile Include="Models\Responses\PaginationResponse.cs" />
     <Compile Include="Models\Setting\SettingBaseModel.cs" />
     <Compile Include="Models\Setting\SettingModel.cs" />
+    <Compile Include="Models\Statistic\VisitModel.cs" />
     <Compile Include="Models\User\UserLoginModel.cs" />
     <Compile Include="Models\User\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

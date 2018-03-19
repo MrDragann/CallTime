@@ -2,7 +2,11 @@
 @{
     ViewBag.Title = "Настройки страницы";
 }
-
+@section scripts{
+    <script>
+        $("#@((EnumSitePage)Model.SitePageId)-tab").addClass("active open selected");
+    </script>
+}
 <div class="row">
     <div class="col-md-12">
         <div class="portlet light bordered">

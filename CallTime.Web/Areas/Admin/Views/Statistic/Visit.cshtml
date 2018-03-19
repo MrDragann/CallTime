@@ -1,0 +1,94 @@
+﻿@model CallTime.Core.Models.Statistic.VisitModel
+    @section scripts{
+        <script>
+            $("#statistic-tab").addClass("active open selected");
+        </script>
+    }
+<div class="row">
+    <div class="col-sm-6">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold uppercase font-dark">Главная</span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dashboard-stat2 bordered">
+                            <div class="display">
+                                <div class="number">
+                                    <h3 class="font-green-sharp">
+                                        <span data-counter="counterup" data-value="@Model.HomeVisit">0</span>
+                                    </h3>
+                                    <small>Посещений</small>
+                                </div>
+                                <div class="icon">
+                                    <i class="icon-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dashboard-stat2 bordered">
+                            <div class="display">
+                                <div class="number">
+                                    <h3 class="font-red-haze">
+                                        <span data-counter="counterup" data-value="@Model.HomeVisitUnique">0</span>
+                                    </h3>
+                                    <small>Уникальных посещений</small>
+                                </div>
+                                <div class="icon">
+                                    <i class="icon-user-following"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="portlet light bordered">
+            <div class="portlet-title">
+                <div class="caption">
+                    <span class="caption-subject bold uppercase font-dark">Токен</span>
+                </div>
+            </div>
+            <div class="portlet-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="dashboard-stat2 bordered">
+                            <div class="display">
+                                <div class="number">
+                                    <h3 class="font-green-sharp">
+                                        <span data-counter="counterup" data-value="@Model.TokenVisit">0</span>
+                                    </h3>
+                                    <small>Посещений</small>
+                                </div>
+                                <div class="icon">
+                                    <i class="icon-users"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="dashboard-stat2 bordered">
+                            <div class="display">
+                                <div class="number">
+                                    <h3 class="font-red-haze">
+                                        <span data-counter="counterup" data-value="@Model.TokenVisitUnique">0</span>
+                                    </h3>
+                                    <small>Уникальных посещений</small>
+                                </div>
+                                <div class="icon">
+                                    <i class="icon-user-following"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

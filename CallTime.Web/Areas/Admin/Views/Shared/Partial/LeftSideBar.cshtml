@@ -1,8 +1,8 @@
 ﻿<div class="nav-collapse collapse navbar-collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav">
-        <li class="dropdown dropdown-fw dropdown-fw-disabled  active open selected">
+        <li class="dropdown dropdown-fw dropdown-fw-disabled" id="@EnumSitePage.Home-tab">
             <a href="javascript:;" class="text-uppercase">
-                <i class="icon-home"></i> Главная
+                @*<i class="icon-home"></i>*@ Главная
             </a>
             <ul class="dropdown-menu dropdown-menu-fw">
                 <li>
@@ -17,9 +17,9 @@
                 </li>
             </ul>
         </li>
-        <li class="dropdown dropdown-fw dropdown-fw-disabled">
+        <li class="dropdown dropdown-fw dropdown-fw-disabled" id="@EnumSitePage.Token-tab">
             <a href="javascript:;" class="text-uppercase">
-                <i class="icon-home"></i> Токен
+                @*<i class="icon-home"></i>*@ Токен
             </a>
             <ul class="dropdown-menu dropdown-menu-fw">
                 <li>
@@ -30,6 +30,18 @@
                 <li>
                     <a target="_blank" href="@Url.Action("Token","Home",new{Area="",edit="edit"})">
                         Редактирование контента
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="dropdown dropdown-fw dropdown-fw-disabled" id="statistic-tab">
+            <a href="javascript:;" class="text-uppercase">
+                @*<i class="icon-home"></i>*@ Статистика
+            </a>
+            <ul class="dropdown-menu dropdown-menu-fw">
+                <li>
+                    <a href="@Url.Action("Visit","Statistic")">
+                        Посещения
                     </a>
                 </li>
             </ul>

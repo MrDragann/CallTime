@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CallTime.Core.Models.Statistic;
 
 namespace CallTime.Core.Interfaces
 {
@@ -17,5 +18,11 @@ namespace CallTime.Core.Interfaces
         /// <param name="page">Страница</param>
         /// <returns></returns>
         BaseResponse SetVisit(string ip, EnumSitePage page);
+
+        /// <summary>
+        /// Получить статистику по посещениям
+        /// </summary>
+        /// <returns></returns>
+        VisitModel GetVisitStatistic();
     }
 }
