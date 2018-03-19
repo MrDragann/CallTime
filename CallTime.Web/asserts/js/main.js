@@ -111,7 +111,7 @@
     });
    //ывывыв
 	$(".typed").typed({
-        strings: ["криптовалютными биржами"],
+        strings: [$(".typed").attr("data-text")],//["криптовалютными биржами"],
 		// Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
 		stringsElement: null,
 		// typing speed

@@ -237,4 +237,13 @@
   <data name="Subscription" xml:space="preserve">
     <value>Подписка</value>
   </data>
+  <data name="CryptoExchange" xml:space="preserve">
+    <value>криптовалютными биржами</value>
+  </data>
+  <data name="DnestrovskStroiteley" xml:space="preserve">
+    <value>Дневстровск, ул. Строителей 5</value>
+  </data>
+  <data name="With" xml:space="preserve">
+    <value>с</value>
+  </data>
 </root>

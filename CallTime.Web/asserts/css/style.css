@@ -425,10 +425,10 @@ input[type="tel"] {
 *** Header ***
 *****************************************************/
 #header {
-    background-image: url('../img/back header call time.png');
+    background: url('../img/back header call time.png') center top;
     background-repeat: no-repeat;
     margin-top: 120px;
-    background-size: auto 100%;
+    background-size: contain;
     height: 1100px;
 }
 

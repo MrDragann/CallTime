@@ -1,0 +1,46 @@
+﻿/*#header {
+    outline: 1px solid #ff0000;
+}*/
+@media (max-width: 1366px) {
+    #header {
+        height: 60vw;
+    }
+}
+
+@media (max-width: 991px) {
+    .title-header, #solve-problems .title-header div p {
+        font-size: 40px;
+    }
+
+        .title-header p {
+            font-size: 40px;
+        }
+
+    .icons-header {
+        display: none;
+    }
+
+    .slick-header .my-dots {
+        display: none !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .title-header, #solve-problems .title-header div p {
+        font-size: 35px;
+    }
+
+        .title-header p {
+            font-size: 35px;
+        }
+
+    .desicription-header, .desicription-header p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 550px) {
+    .flex-nav-header {
+        white-space: nowrap;
+    }
+}

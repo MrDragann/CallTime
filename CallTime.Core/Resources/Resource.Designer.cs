@@ -151,11 +151,29 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на криптовалютными биржами.
+        /// </summary>
+        public static string CryptoExchange {
+            get {
+                return ResourceManager.GetString("CryptoExchange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на ru.
         /// </summary>
         public static string CurrentLang {
             get {
                 return ResourceManager.GetString("CurrentLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Дневстровск, ул. Строителей 5.
+        /// </summary>
+        public static string DnestrovskStroiteley {
+            get {
+                return ResourceManager.GetString("DnestrovskStroiteley", resourceCulture);
             }
         }
         
@@ -399,6 +417,15 @@ namespace Resources {
         public static string Vk {
             get {
                 return ResourceManager.GetString("Vk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на с.
+        /// </summary>
+        public static string With {
+            get {
+                return ResourceManager.GetString("With", resourceCulture);
             }
         }
         

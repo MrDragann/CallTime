@@ -173,6 +173,7 @@
     <Content Include="asserts\css\main.css" />
     <Content Include="asserts\css\mediaelementplayer.min.css" />
     <Content Include="asserts\css\normalize.css" />
+    <Content Include="asserts\css\responsive.css" />
     <Content Include="asserts\css\slick.css" />
     <Content Include="asserts\css\style.css" />
     <Content Include="asserts\img\back header call time%402x.png" />

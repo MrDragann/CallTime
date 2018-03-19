@@ -237,4 +237,13 @@
   <data name="Subscription" xml:space="preserve">
     <value>Subscription</value>
   </data>
+  <data name="CryptoExchange" xml:space="preserve">
+    <value>crypto exchange</value>
+  </data>
+  <data name="DnestrovskStroiteley" xml:space="preserve">
+    <value>Dnestrovsk, Stroiteley str. 5</value>
+  </data>
+  <data name="With" xml:space="preserve">
+    <value>with</value>
+  </data>
 </root>
