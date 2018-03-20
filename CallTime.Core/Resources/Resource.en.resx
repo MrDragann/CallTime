@@ -246,4 +246,37 @@
   <data name="With" xml:space="preserve">
     <value>with</value>
   </data>
+  <data name="BeginningMarketingCompany" xml:space="preserve">
+    <value>Beginning of marketing company</value>
+  </data>
+  <data name="BeginningNegotiationsWithExchanges" xml:space="preserve">
+    <value>Beginning of negotiations with exchanges</value>
+  </data>
+  <data name="BirthIdea" xml:space="preserve">
+    <value>Birth of the idea</value>
+  </data>
+  <data name="BountyCompany" xml:space="preserve">
+    <value>Bounty Company</value>
+  </data>
+  <data name="ConclusionServiceWithFirstExchange" xml:space="preserve">
+    <value>Conclusion of a service contract with first exchange</value>
+  </data>
+  <data name="CreatingTokenTrainingStaff" xml:space="preserve">
+    <value>Creating a token and training staff</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Development</value>
+  </data>
+  <data name="InitialPlacementExchange" xml:space="preserve">
+    <value>Initial placement on the exchange</value>
+  </data>
+  <data name="Quarter" xml:space="preserve">
+    <value>Quarter</value>
+  </data>
+  <data name="ServingMore10Exchanges" xml:space="preserve">
+    <value>Serving more than 10 exchanges</value>
+  </data>
+  <data name="SupportForProjectsStartups" xml:space="preserve">
+    <value>Support for third-party projects and startups</value>
+  </data>
 </root>

@@ -88,6 +88,24 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Начало маркетинговой компании.
+        /// </summary>
+        public static string BeginningMarketingCompany {
+            get {
+                return ResourceManager.GetString("BeginningMarketingCompany", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Начало переговоров с биржами.
+        /// </summary>
+        public static string BeginningNegotiationsWithExchanges {
+            get {
+                return ResourceManager.GetString("BeginningNegotiationsWithExchanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Бендеры, Ленина 6.
         /// </summary>
         public static string BenderLenin {
@@ -102,6 +120,24 @@ namespace Resources {
         public static string BeSureApplyingProfessionals {
             get {
                 return ResourceManager.GetString("BeSureApplyingProfessionals", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Рождение идеи.
+        /// </summary>
+        public static string BirthIdea {
+            get {
+                return ResourceManager.GetString("BirthIdea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Bounty компания.
+        /// </summary>
+        public static string BountyCompany {
+            get {
+                return ResourceManager.GetString("BountyCompany", resourceCulture);
             }
         }
         
@@ -133,6 +169,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Заключение договора на обслуживание с первой биржей.
+        /// </summary>
+        public static string ConclusionServiceWithFirstExchange {
+            get {
+                return ResourceManager.GetString("ConclusionServiceWithFirstExchange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Связаться с нами.
         /// </summary>
         public static string ConnectWithUs {
@@ -151,6 +196,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Создание токена и обучение персонала.
+        /// </summary>
+        public static string CreatingTokenTrainingStaff {
+            get {
+                return ResourceManager.GetString("CreatingTokenTrainingStaff", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на криптовалютными биржами.
         /// </summary>
         public static string CryptoExchange {
@@ -165,6 +219,15 @@ namespace Resources {
         public static string CurrentLang {
             get {
                 return ResourceManager.GetString("CurrentLang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Развитие.
+        /// </summary>
+        public static string Development {
+            get {
+                return ResourceManager.GetString("Development", resourceCulture);
             }
         }
         
@@ -228,6 +291,15 @@ namespace Resources {
         public static string InboundServices {
             get {
                 return ResourceManager.GetString("InboundServices", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Первоначальное размещение на бирже.
+        /// </summary>
+        public static string InitialPlacementExchange {
+            get {
+                return ResourceManager.GetString("InitialPlacementExchange", resourceCulture);
             }
         }
         
@@ -322,6 +394,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Квартал.
+        /// </summary>
+        public static string Quarter {
+            get {
+                return ResourceManager.GetString("Quarter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Отправить.
         /// </summary>
         public static string Send {
@@ -345,6 +426,15 @@ namespace Resources {
         public static string Services {
             get {
                 return ResourceManager.GetString("Services", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Обслуживание более 10 бирж.
+        /// </summary>
+        public static string ServingMore10Exchanges {
+            get {
+                return ResourceManager.GetString("ServingMore10Exchanges", resourceCulture);
             }
         }
         
@@ -390,6 +480,15 @@ namespace Resources {
         public static string Subscription {
             get {
                 return ResourceManager.GetString("Subscription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Ищет локализованную строку, похожую на Поддержка сторонних блокчейн проектов и стартапов.
+        /// </summary>
+        public static string SupportForProjectsStartups {
+            get {
+                return ResourceManager.GetString("SupportForProjectsStartups", resourceCulture);
             }
         }
         
