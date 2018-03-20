@@ -432,7 +432,17 @@ input[type="tel"] {
     height: 1100px;
 }
 
+@media screen and (max-width: 1700px) {
+    #header {
+        height: 1000px;
+    }
+}
 
+@media screen and (max-width: 1600px) {
+    #header {
+        height: 911px;
+    }
+}
 
 @media screen and (max-width: 1400px) {
     #header {
