@@ -84,9 +84,8 @@ namespace CallTime.Web.Controllers
             return RedirectToAction("Index");
         }
         public ActionResult Careers(ModelCareers model)
-        {
-            
-            Emailer.Send(ModelEmailFeedBack.GetHtmlTextCareers(model), "Новая заявка на сайте CallTime", "maks-bot-5@mail.ru");
+        {            
+            Emailer.Send(ModelEmailFeedBack.GetHtmlTextCareers(model), "Новая заявка на сайте CallTime", "kadri.calltime@gmail.com");
             return RedirectToAction("Index");
         }
         [HttpPost]
