@@ -246,4 +246,37 @@
   <data name="With" xml:space="preserve">
     <value>с</value>
   </data>
+  <data name="BeginningMarketingCompany" xml:space="preserve">
+    <value>Начало маркетинговой компании</value>
+  </data>
+  <data name="BeginningNegotiationsWithExchanges" xml:space="preserve">
+    <value>Начало переговоров с биржами</value>
+  </data>
+  <data name="BirthIdea" xml:space="preserve">
+    <value>Рождение идеи</value>
+  </data>
+  <data name="BountyCompany" xml:space="preserve">
+    <value>Bounty компания</value>
+  </data>
+  <data name="ConclusionServiceWithFirstExchange" xml:space="preserve">
+    <value>Заключение договора на обслуживание с первой биржей</value>
+  </data>
+  <data name="CreatingTokenTrainingStaff" xml:space="preserve">
+    <value>Создание токена и обучение персонала</value>
+  </data>
+  <data name="Development" xml:space="preserve">
+    <value>Развитие</value>
+  </data>
+  <data name="InitialPlacementExchange" xml:space="preserve">
+    <value>Первоначальное размещение на бирже</value>
+  </data>
+  <data name="Quarter" xml:space="preserve">
+    <value>Квартал</value>
+  </data>
+  <data name="ServingMore10Exchanges" xml:space="preserve">
+    <value>Обслуживание более 10 бирж</value>
+  </data>
+  <data name="SupportForProjectsStartups" xml:space="preserve">
+    <value>Поддержка сторонних блокчейн проектов и стартапов</value>
+  </data>
 </root>
