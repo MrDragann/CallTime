@@ -158,6 +158,7 @@
     <Compile Include="Infrastructure\ConstRoles.cs" />
     <Compile Include="Infrastructure\WebUser.cs" />
     <Compile Include="Models\Emailer.cs" />
+    <Compile Include="Models\GoogleModel.cs" />
     <Compile Include="Models\ModelCareers.cs" />
     <Compile Include="Models\ModelEmailFeedBack.cs" />
     <Compile Include="Models\ModelFeedback.cs" />
@@ -303,6 +304,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\assets\admin\" />
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

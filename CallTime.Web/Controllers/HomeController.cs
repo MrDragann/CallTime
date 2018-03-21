@@ -9,6 +9,7 @@ using CallTime.Core.Enums;
 using CallTime.Core.Interfaces;
 using CallTime.Core.Services.Settings;
 using CallTime.Core.Services.Statistic;
+using System.IO;
 
 namespace CallTime.Web.Controllers
 {
@@ -80,12 +81,46 @@ namespace CallTime.Web.Controllers
         {
             model.Subject = "Обратная связь";
             model.Text = ModelEmailFeedBack.GetHtmlText(model);
-            Emailer.Send(model.Text, model.Subject, "sss8474@gmail.com");
+            var recaptchaResponse = Request["g-recaptcha-response"];
+            var key = "6LeRUEoUAAAAAKzmCJIFTzws-JVRvMIJTBOAifor";
+            var client = new WebClient();
+            var GoogleReply = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}&remoteip={2}", key, recaptchaResponse, Request.ServerVariables["REMOTE_ADDR"]));
+            var captchaResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleModel>(GoogleReply);
+            if (captchaResponse.success)
+                Emailer.Send(model.Text, model.Subject, "sss8474@gmail.com");
+            else
+            {
+                var path = Server.MapPath("~/logs/logs.txt");
+                FileStream fileStream = new FileStream(path, FileMode.Open);
+                StreamWriter streamWriter = new StreamWriter(fileStream);
+                streamWriter.BaseStream.Seek(fileStream.Length, SeekOrigin.End);//запись в конец файла
+                streamWriter.Write("\r\n" + "Вакансии:/// IP:" + Request.ServerVariables["HTTP_X_FORWARDED_FOR"] + "/// Date:" + DateTime.Now);
+                streamWriter.Close();
+                fileStream.Close();
+            }         
             return RedirectToAction("Index");
         }
         public ActionResult Careers(ModelCareers model)
-        {            
-            Emailer.Send(ModelEmailFeedBack.GetHtmlTextCareers(model), "Новая заявка на сайте CallTime", "kadri.calltime@gmail.com");
+        {
+            var recaptchaResponse = Request["g-recaptcha-response"];
+            var key = "6LeRUEoUAAAAAKzmCJIFTzws-JVRvMIJTBOAifor";
+            var client = new WebClient();
+            var GoogleReply = client.DownloadString(string.Format("https://www.google.com/recaptcha/api/siteverify?secret={0}&response={1}&remoteip={2}", key, recaptchaResponse, Request.ServerVariables["REMOTE_ADDR"]));
+            var captchaResponse = Newtonsoft.Json.JsonConvert.DeserializeObject<GoogleModel>(GoogleReply);
+            if (captchaResponse.success)
+                Emailer.Send(ModelEmailFeedBack.GetHtmlTextCareers(model), "Новая заявка на сайте CallTime", "kadri.calltime@gmail.com");
+
+            else
+            {
+                var path = Server.MapPath("~/logs/logs.txt");
+                FileStream fileStream = new FileStream(path, FileMode.Open);
+                StreamWriter streamWriter = new StreamWriter(fileStream);
+                streamWriter.BaseStream.Seek(fileStream.Length, SeekOrigin.End);//запись в конец файла
+                streamWriter.Write("\r\n" + "Вакансии:/// IP:" + Request.ServerVariables["HTTP_X_FORWARDED_FOR"] + "/// Date:" + DateTime.Now);
+                streamWriter.Close();
+                fileStream.Close();
+            }
+
             return RedirectToAction("Index");
         }
         [HttpPost]
