@@ -2,7 +2,7 @@
 @{
     Layout = null;
 }
-
+<!--
 <header id="main-nav">
     <div class="top-header">
         <div class="container">
@@ -38,3 +38,59 @@
     </div>
 </header><!-- //Main Nav -->
 
+<header id="main-nav">
+    <nav class="navbar navbar-expand-lg top-header navbar-light" style="z-index:200;">
+
+        <div class="container">
+           
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-top-header" id="navbarSupportedContent">
+
+                <div class="navbar-nav mr-auto col-md-6">
+                    <div class="nav-item active">
+                        <a class="navbar-link" href="@Url.Action("Index","Home")">@Resource.CallCenter</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="navbar-link" href="@Url.Action("Token","Home")">@Resource.Token</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="navbar-link" href="@Url.Action("PersonalCabinet","Home")">@Resource.PersonalArea</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 flex-nav-header pull-right">
+                    @Url.LangSwitcher(ViewContext.RouteData, Resource.Lang)
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bottom-header  navbar-light">
+        <a class="navbar-brand" href="@Url.Action("Token","Home")">  <img src="~/asserts/img/logo ctt.svg" height="42" width="137" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBottomSupportedContent" aria-controls="navbarBottomSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container ">
+            <div class="collapse navbar-collapse" id="navbarBottomSupportedContent">
+                <div class="col-md-2 flex-nav-header" id="logo">
+                    <div class="flex-item">
+                        <a href="@Url.Action("Token","Home")">
+                            <img src="~/asserts/img/logo ctt.svg" height="42" width="137" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-10  flex-nav-header">
+
+                    <div class="active flex-item  nav-solve-problems"><a href="#solve-problems">@Resource.Problems</a></div>
+                    <div class="flex-item nav-about-token"><a href="#about-token">@Resource.About</a></div>
+                    <div class="flex-item  nav-our-offers"><a href="#our-offers">@Resource.Sentence </a></div>
+                    <div class="flex-item nav-stages-project"> <a href="#stages-project">@Resource.Development</a></div>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</header>   

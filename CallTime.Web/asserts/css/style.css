@@ -865,6 +865,7 @@ input[type="tel"] {
     position: relative;
     top: 100px;
     left: -65px;
+    width:50%;
 }
 
     .list-social a {
@@ -1150,18 +1151,60 @@ input[type="tel"] {
 
 
 
-
+.navbar-brand {
+    display:none;
+}
 /*****************************************************
 Responsive Styles
 *****************************************************/
 @media only screen and (max-width: 992px) {
     /*** Main Nav ***/
-    #main-nav .col-md-4:first-child,
-    #main-nav .col-md-4:last-child {
+    #main-nav .col-md-4:first-child, #main-nav .col-md-4:last-child {
         display: none;
     }
+    .navbar-brand {
+        display:block;
+    }
+    .list-social {
+     
+        width: 100%;
+    }
+    .flex-about-token div {
+        margin-right: 0px;
+    }
 
-    #main-nav .logo {
+    .flex-nav-header div, .flex-top-header div {
+        background-color: #F7F7F7;
+        text-align: center;
+        margin:0px !important;
+    }
+    .flex-nav-header .flex-item {
+        display:block !important;
+
+    }
+    .flex-nav-header {
+        background-color: #F7F7F7;
+        top: 33px;
+    }
+    .flex-column .title-header, .flex-column .desicription-header {
+        width:100% !important;
+    }
+    .img-offer {
+        border: none;
+        border-radius: 8px;
+        width: 330px;
+        height: 410px;
+    }
+    .img-offer img {
+        left: 0;
+    }
+    #about-token .orange-line-bold {
+        display:none;
+    }
+    #stages-project {
+        display: none;
+    }
+        #main-nav .logo {
         padding-top: 0px;
     }
 
@@ -1430,9 +1473,9 @@ Responsive Styles
         width: 950px;
     }
 
-    #footer {
+    /*#footer {
         width: 950px;
-    }
+    }*/
 
     .item-img {
         display: none;

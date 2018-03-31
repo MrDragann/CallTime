@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
+<!--
 <header id="main-nav">
     <div class="top-header ">
         <div class="container">
@@ -23,12 +23,12 @@
                 <div class="flex-item">
                     <a href="@Url.Action("Index","Home")">
                         <img src="~/asserts/img/logo call time.svg" height="39" width="111" />
-                    </a>                   
+                    </a>
                 </div>
             </div>
             <div class="col-xs-10 col-sm-10 col-md-10  flex-nav-header">
 
-                <div class="active flex-item  nav-services"><a href="#services" >@Resource.Services</a></div>
+                <div class="active flex-item  nav-services"><a href="#services">@Resource.Services</a></div>
                 <div class="flex-item nav-about"><a href="#about">@Resource.About</a></div>
                 <div class="flex-item  nav-contacts"><a href="#contacts">@Resource.Contacts</a></div>
                 <div class="flex-item nav-become-partner"> <a href="#Careers" class="open-popup-link">@Resource.Jobs</a></div>
@@ -37,3 +37,61 @@
         </div>
     </div>
 </header><!-- //Main Nav -->
+
+<header id="main-nav">
+    <nav class="navbar navbar-expand-lg top-header navbar-light" style="z-index:200;">
+
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse flex-top-header" id="navbarSupportedContent">
+
+                <div class="navbar-nav mr-auto col-md-6">
+                    <div class="nav-item active">
+                        <a class="navbar-link" href="@Url.Action("Index","Home")">@Resource.CallCenter</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="navbar-link" href="@Url.Action("Token","Home")">@Resource.Token</a>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a class="navbar-link" href="@Url.Action("PersonalCabinet","Home")">@Resource.PersonalArea</a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-4 flex-nav-header pull-right">
+                    @Url.LangSwitcher(ViewContext.RouteData, Resource.Lang)
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bottom-header  navbar-light">
+        <a class="navbar-brand" href="@Url.Action("Token","Home")">  <img src="~/asserts/img/logo ctt.svg" height="42" width="137" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarBottomSupportedContent" aria-controls="navbarBottomSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container ">
+            <div class="collapse navbar-collapse" id="navbarBottomSupportedContent">
+                <div class="col-md-2 flex-nav-header" id="logo">
+                    <div class="flex-item">
+                        <a href="@Url.Action("Token","Home")">
+                            <img src="~/asserts/img/logo ctt.svg" height="42" width="137" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-10  flex-nav-header">
+
+                    <div class="active flex-item  nav-services"><a href="#services">@Resource.Services</a></div>
+                    <div class="flex-item nav-about"><a href="#about">@Resource.About</a></div>
+                    <div class="flex-item  nav-contacts"><a href="#contacts">@Resource.Contacts</a></div>
+                    <div class="flex-item nav-become-partner"> <a href="#Careers" class="open-popup-link">@Resource.Jobs</a></div>
+
+                </div>
+            </div>
+        </div>
+
+    </nav>
+</header>   

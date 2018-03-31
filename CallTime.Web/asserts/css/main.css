@@ -23,15 +23,15 @@
 
 
 .flex-nav-header {
-    display: flex;
     align-items: stretch;
     flex-direction: row;
     justify-content: center;
     height: 100%;
+    text-align: center;
 }
 
     .flex-nav-header .flex-item {
-        display: flex;
+        display: inline-block;
         align-items: center;
     }
 
@@ -69,7 +69,6 @@
     }
 
 .flex-top-header {
-    display: flex;
     align-items: center;
     flex-direction: row;
     height: 100%;
@@ -84,7 +83,7 @@
 
     .flex-column .title-header, .flex-column .desicription-header {
         width: 50%;
-        margin-bottom:40px;
+        margin-bottom: 40px;
     }
 
 .title-header, #solve-problems .title-header div p {
@@ -145,7 +144,7 @@
 }
 
 #header .circle-icon {
-    /*bottom: 15% !important;*/ 
+    /*bottom: 15% !important;*/
 }
 
 .circle-icon:hover {
