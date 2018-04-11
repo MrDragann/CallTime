@@ -18,7 +18,7 @@ namespace CallTime.Web.Models
         }
         public static string GetHtmlTextSubscribe(string email)
         {
-            return string.Format($"<p>Новый подписка на сайте CallTime. Данные пользователя:" +
+            return string.Format($"<p>Новая подписка на сайте CallTime. Данные пользователя:" +
                 $"<br>Почта:{email}");
         }
         public static string GetHtmlTextCareers(ModelCareers model)
