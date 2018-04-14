@@ -1327,7 +1327,7 @@ Responsive Styles
 }
 @media only screen and (max-width: 1262px) {
     .arrow {     
-        margin: -11px auto !important;
+        margin: -15px auto !important;
     }
 
         .arrow.small {
