@@ -73,7 +73,7 @@ namespace CallTime.Web.Controllers
         public ActionResult Subscribe(string email)
         {
             var message = ModelEmailFeedBack.GetHtmlTextSubscribe(email);
-            Emailer.Send(message, "Подписка", "token@call-time.ru");
+            Emailer.Send(message, "Подписка", "token.calltime@gmail.com");
             return RedirectToAction("Token");
         }
 

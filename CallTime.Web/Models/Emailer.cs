@@ -25,10 +25,11 @@ namespace CallTime.Web.Models
                 msg.Body = text;
                 SmtpClient smtp = new SmtpClient();
                 smtp.Send(msg);
+              
             }
             catch (Exception e)
             {
-
+                throw;
             }
         }
 
